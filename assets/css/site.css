@@ -172,6 +172,13 @@ code {
   font-size: 14px; line-height: 1.2; font-weight: 700; white-space: nowrap;
 }
 .lang-switch:hover { border-color: var(--ink); color: var(--ink); }
+.mobile-langs { display: none; }
+@media (max-width: 560px) {
+  .header-actions .lang-switch { display: none; }
+  .mobile-langs { display: flex; gap: 8px; padding: 10px 8px 4px; }
+  .mobile-langs a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--line-2);
+    border-radius: 10px; font-weight: 700; color: var(--ink); text-decoration: none; background: #fff; }
+}
 .gh-link { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); }
 .gh-link svg { width: 20px; height: 20px; }
 .menu-toggle {

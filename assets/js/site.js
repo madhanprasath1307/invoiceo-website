@@ -5,7 +5,24 @@
   var C = window.INVOICEO || {};
   // Words this script writes into the page, in the page's language (ta.html is Tamil).
   var TA = document.documentElement.lang === 'ta';
-  var T = TA ? {
+  var HI = document.documentElement.lang === 'hi';
+  var T = HI ? {
+    soon: 'जल्द आ रहा है',
+    phoneButton: 'लिंक कंप्यूटर पर भेजें',
+    sendText: 'Invoiceo — मुफ़्त बिलिंग सॉफ़्टवेयर। अपने कंप्यूटर पर खोलकर डाउनलोड कीजिए:',
+    sendUrl: 'https://invoiceo.in/hi.html#download',
+    copied: 'लिंक कॉपी हो गया', copyPrompt: 'यह लिंक कॉपी कीजिए:',
+    downloadFor: function (n) { return n + ' के लिए डाउनलोड'; },
+    phoneMeta: 'Invoiceo, Windows, macOS और Linux कंप्यूटर के लिए डेस्कटॉप ऐप है। इंस्टॉल करने के लिए यह पेज अपने कंप्यूटर पर खोलिए।',
+    free: 'मुफ़्त', version: 'संस्करण ', alsoBefore: ' · ', alsoAfter: ' के लिए भी उपलब्ध', and: ' और ',
+    started: 'डाउनलोड शुरू हो गया।', steps: 'पूरे कदम', stepsPage: '', close: 'बंद करें',
+    help: {
+      windows: 'डाउनलोड पूरा होने पर फ़ाइल खोलिए। अगर <b>“Windows protected your PC”</b> दिखे, तो <b>More info</b> दबाइए, फिर <b>Run anyway</b>।',
+      mac: 'फ़ाइल खोलकर Invoiceo को Applications में खींचिए। पहली बार macOS रोके तो <b>System Settings → Privacy &amp; Security</b> खोलकर <b>Open Anyway</b> दबाइए।',
+      linux_deb: 'जिस फ़ोल्डर में डाउनलोड हुई है वहाँ <code>sudo apt install ./Invoiceo-Linux.deb</code> चलाइए।',
+      linux_appimage: '<code>chmod +x Invoiceo-Linux.AppImage</code> चलाइए, फिर खोलिए।'
+    }
+  } : TA ? {
     soon: 'விரைவில்',
     phoneButton: 'லிங்கை கணினிக்கு அனுப்பு',
     sendText: 'Invoiceo — இலவச பில்லிங் சாஃப்ட்வேர். கணினியில் திறந்து டவுன்லோட் செய்யுங்கள்:',

@@ -6,6 +6,7 @@
 
 - [Home](https://invoiceo.in/): what Invoiceo does
 - [Home in Tamil](https://invoiceo.in/ta.html): the same page in Tamil (தமிழ்)
+- [Home in Hindi](https://invoiceo.in/hi.html): the same page in Hindi (हिन्दी)
 - [Download](https://invoiceo.in/download.html): installers for Windows, macOS and Linux, with install steps
 - [Customization](https://invoiceo.in/customization.html): paid custom features, quoted per request
 - [Reviews](https://invoiceo.in/reviews.html): what customers say, and recent custom work
