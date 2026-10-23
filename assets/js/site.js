@@ -138,6 +138,7 @@
 
   if (os === 'mobile') {
     document.querySelectorAll('[data-mobile-note]').forEach(function (n) { n.classList.remove('hidden'); });
+    document.querySelectorAll('[data-hero-send]').forEach(function (n) { n.classList.remove('hidden'); });
   }
   // Highlight the card for this computer (none on phones or unknown systems).
   document.querySelectorAll('[data-platform]').forEach(function (card) {

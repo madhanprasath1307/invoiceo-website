@@ -551,3 +551,9 @@ html[lang="ta"] .testimonial blockquote p { font-size: clamp(16px, 1.3vw, 18px);
 .send-link { display: flex; flex-wrap: wrap; gap: 8px; }
 .send-link .btn { min-height: 40px; padding: 8px 14px; }
 @media (max-width: 480px) { .send-link .btn { flex: 1 1 auto; } }
+/* Phones: get the download button above the fold. */
+@media (max-width: 600px) {
+  .hero-copy { gap: 16px; }
+  .hero-copy .badges { display: none; }
+  .hero-copy .lead { font-size: 16px; }
+}

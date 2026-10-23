@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/site.css?v=5d3519de44">
+  <link rel="stylesheet" href="assets/css/site.css?v=7ae3e32a1b">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -50,8 +50,19 @@
 
 <section class="page-body">
   <div class="wrap measure">
+    <article class="release" id="v1.0.7">
+      <h2>Version 1.0.7 <span class="badge badge-brand"><span>Latest</span></span></h2>
+      <p class="date">23 October 2026</p>
+      <ul>
+        <li><b>Low-stock limit for each product.</b> Until now every product counted as “low” at 10 or less. Now you can set your own limit on a product, for example 50 for rice and 2 for an expensive item. The Low Stock list, its count, and the colour and label in the product list all follow it. Leave it blank and a product works exactly as before.</li>
+        <li>The limit is in the New Product and Edit forms and in the products CSV (a new <code>low_stock_limit</code> column), and Duplicate keeps it.</li>
+        <li><b>New Product / New Service window.</b> In the Modern layout, adding a product now opens a clear window with General, Pricing and Inventory sections and a Track stock switch.</li>
+        <li>Fixes: the “saved” message no longer covers the Save button on the next product, and the Unit box no longer overflows in Tamil.</li>
+        <li>Your existing data and backups are safe: the app upgrades its database on first start, and older backups still restore.</li>
+      </ul>
+    </article>
     <article class="release" id="v1.0.6">
-      <h2>Version 1.0.6 <span class="badge badge-brand"><span>Latest</span></span></h2>
+      <h2>Version 1.0.6</h2>
       <p class="date">9 October 2026</p>
       <ul>
         <li><b>Tamil Settings screens read better.</b> PDF Settings, Invoice Settings, Company Info and Software Info now show the full Tamil words: the Reset to default button, template descriptions, and the notes under the invoice settings boxes are no longer cut off.</li>
@@ -87,12 +98,12 @@
     </article>
     <article class="release" id="v1.0.2">
       <h2>Version 1.0.2</h2>
-      <p class="date">9 October 2026</p>
+      <p class="date">8 October 2026</p>
       <p>The app is the same as version 1.0.1: there are no new features or fixes in this release. If you already have 1.0.1, you don’t need to update.</p>
     </article>
     <article class="release" id="v1.0.1">
       <h2>Version 1.0.1</h2>
-      <p class="date">9 October 2026</p>
+      <p class="date">8 October 2026</p>
       <p>Fixes and improvements from release testing.</p>
       <ul>
         <li>Stock can be a decimal number, so selling 0.5 kg takes exactly 0.5 from stock.</li>
@@ -107,7 +118,7 @@
     </article>
     <article class="release" id="v1.0.0">
       <h2>Version 1.0.0</h2>
-      <p class="date">9 October 2026</p>
+      <p class="date">8 October 2026</p>
       <p>The first release under the Invoiceo name.</p>
       <ul>
         <li>New name, logo and a clean light design.</li>
@@ -143,6 +154,6 @@
   </div>
 </footer>
 <script src="assets/js/config.js?v=5711cc85d9"></script>
-<script src="assets/js/site.js?v=7aa2aa91ef"></script>
+<script src="assets/js/site.js?v=e3c445d99d"></script>
 </body>
 </html>
