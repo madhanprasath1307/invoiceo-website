@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#ffffff">
-  <title>What’s new — Invoiceo</title>
-  <meta name="description" content="Release notes for Invoiceo: what changed in each version.">
+  <title>What’s new: release notes and version history — Invoiceo</title>
+  <meta name="description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.7, with the release dates.">
   <link rel="canonical" href="https://invoiceo.in/changelog.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Invoiceo">
   <meta property="og:locale" content="en_IN">
-  <meta property="og:title" content="What’s new — Invoiceo">
-  <meta property="og:description" content="Release notes for Invoiceo: what changed in each version.">
+  <meta property="og:title" content="What’s new: release notes and version history — Invoiceo">
+  <meta property="og:description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.7, with the release dates.">
   <meta property="og:url" content="https://invoiceo.in/changelog.html">
   <meta property="og:image" content="https://invoiceo.in/assets/images/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What’s new: release notes and version history — Invoiceo">
+  <meta name="twitter:description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.7, with the release dates.">
+  <meta name="twitter:image" content="https://invoiceo.in/assets/images/og-image.png">
+  <link rel="alternate" type="text/markdown" href="/llms.txt" title="llms.txt">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
@@ -24,6 +28,54 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&amp;display=swap">
   <link rel="stylesheet" href="assets/css/site.css?v=782cdf433d">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://invoiceo.in/changelog.html#webpage",
+  "url": "https://invoiceo.in/changelog.html",
+  "name": "What’s new: release notes and version history — Invoiceo",
+  "description": "Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.7, with the release dates.",
+  "inLanguage": "en",
+  "dateModified": "2026-10-27",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://invoiceo.in/#website",
+    "name": "Invoiceo",
+    "url": "https://invoiceo.in/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://invoiceo.in/#organization",
+    "name": "Madcreations",
+    "url": "https://invoiceo.in/"
+  },
+  "breadcrumb": {
+    "@id": "https://invoiceo.in/changelog.html#breadcrumb"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://invoiceo.in/changelog.html#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://invoiceo.in/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "What’s new",
+      "item": "https://invoiceo.in/changelog.html"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -44,7 +96,7 @@
   <div class="wrap">
     <p class="eyebrow">Updates</p>
     <h1>What’s new in Invoiceo</h1>
-    <p class="lead">Every release, newest first. Download the latest version from the <a href="download.html">Download page</a>.</p>
+    <p class="lead">Every release, newest first. Download the latest version from the <a href="download.html">Download page</a>; the FAQ explains <a href="faq.html#installing-and-updating">how to update without losing your data</a>.</p>
   </div>
 </section>
 
@@ -52,7 +104,7 @@
   <div class="wrap measure">
     <article class="release" id="v1.0.7">
       <h2>Version 1.0.7 <span class="badge badge-brand"><span>Latest</span></span></h2>
-      <p class="date">23 October 2026</p>
+      <p class="date"><time datetime="2026-10-23">23 October 2026</time></p>
       <ul>
         <li><b>Low-stock limit for each product.</b> Until now every product counted as “low” at 10 or less. Now you can set your own limit on a product, for example 50 for rice and 2 for an expensive item. The Low Stock list, its count, and the colour and label in the product list all follow it. Leave it blank and a product works exactly as before.</li>
         <li>The limit is in the New Product and Edit forms and in the products CSV (a new <code>low_stock_limit</code> column), and Duplicate keeps it.</li>
@@ -63,7 +115,7 @@
     </article>
     <article class="release" id="v1.0.6">
       <h2>Version 1.0.6</h2>
-      <p class="date">9 October 2026</p>
+      <p class="date"><time datetime="2026-10-09">9 October 2026</time></p>
       <ul>
         <li><b>Tamil Settings screens read better.</b> PDF Settings, Invoice Settings, Company Info and Software Info now show the full Tamil words: the Reset to default button, template descriptions, and the notes under the invoice settings boxes are no longer cut off.</li>
         <li>Software Info shows the app description in Tamil, and the “Buy me a coffee” button reads clearly in Tamil.</li>
@@ -72,7 +124,7 @@
     </article>
     <article class="release" id="v1.0.5">
       <h2>Version 1.0.5</h2>
-      <p class="date">9 October 2026</p>
+      <p class="date"><time datetime="2026-10-09">9 October 2026</time></p>
       <ul>
         <li><b>Tamil screens read better.</b> Long Tamil labels are no longer cut off with “…”: the sidebar, page titles, dashboard cards and charts, the invoice, customer and product lists, and the Reports menu now show the full words.</li>
         <li>On the New Invoice screen, when the buttons are too narrow for their names, Create goes full width with Save Draft under it.</li>
@@ -81,14 +133,14 @@
     </article>
     <article class="release" id="v1.0.4">
       <h2>Version 1.0.4</h2>
-      <p class="date">9 October 2026</p>
+      <p class="date"><time datetime="2026-10-09">9 October 2026</time></p>
       <ul>
         <li>Anonymous usage counts are now on, so we can see how many shops use Invoiceo: a short message when the app is first opened, once a day while it is used, and once when the first invoice is made. They never include your business data. Turn them off any time in Settings → Software Info (see the <a href="privacy.html">privacy policy</a>).</li>
       </ul>
     </article>
     <article class="release" id="v1.0.3">
       <h2>Version 1.0.3</h2>
-      <p class="date">9 October 2026</p>
+      <p class="date"><time datetime="2026-10-09">9 October 2026</time></p>
       <ul>
         <li><b>Automatic backup.</b> Turn it on in Settings → Backup: every day or every week, while the app is open, a copy of your company’s data is saved by itself. Choose a folder inside Google Drive or OneDrive and the copies reach the cloud automatically.</li>
         <li>Keep the last 5, 10 or 30 automatic copies; older automatic copies are removed, and nothing else in the folder is touched.</li>
@@ -98,12 +150,12 @@
     </article>
     <article class="release" id="v1.0.2">
       <h2>Version 1.0.2</h2>
-      <p class="date">8 October 2026</p>
+      <p class="date"><time datetime="2026-10-08">8 October 2026</time></p>
       <p>The app is the same as version 1.0.1: there are no new features or fixes in this release. If you already have 1.0.1, you don’t need to update.</p>
     </article>
     <article class="release" id="v1.0.1">
       <h2>Version 1.0.1</h2>
-      <p class="date">8 October 2026</p>
+      <p class="date"><time datetime="2026-10-08">8 October 2026</time></p>
       <p>Fixes and improvements from release testing.</p>
       <ul>
         <li>Stock can be a decimal number, so selling 0.5 kg takes exactly 0.5 from stock.</li>
@@ -118,7 +170,7 @@
     </article>
     <article class="release" id="v1.0.0">
       <h2>Version 1.0.0</h2>
-      <p class="date">8 October 2026</p>
+      <p class="date"><time datetime="2026-10-08">8 October 2026</time></p>
       <p>The first release under the Invoiceo name.</p>
       <ul>
         <li>New name, logo and a clean light design.</li>
@@ -145,7 +197,7 @@
       </div>
       <div><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how-it-works">How it works</a></li><li><a href="index.html#screenshots">Screenshots</a></li><li><a href="reviews.html">Customer reviews</a></li><li><a href="download.html">Download</a></li><li><a href="changelog.html">What’s new</a></li></ul></div>
       <div><h2>Help</h2><ul><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li data-block><a data-href="forms.support" data-hide-empty target="_blank" rel="noopener">Support request</a></li><li data-block><a data-whatsapp target="_blank" rel="noopener">WhatsApp</a></li><li data-block><a data-href="forms.feedback" data-hide-empty target="_blank" rel="noopener">Feedback</a></li><li><a href="customization.html">Custom features (paid)</a></li></ul></div>
-      <div><h2>Legal</h2><ul><li><a href="licenses.html">Licenses</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+      <div><h2>Legal</h2><ul><li><a href="licenses.html">Licenses</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="llms.txt">llms.txt</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <span>© <span data-year>2026</span> Madcreations. Built on Invoiso, released under the <a href="licenses.html">MIT License</a>, © 2025 ANOOP P.</span>
