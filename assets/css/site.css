@@ -274,7 +274,7 @@ code {
 .facts { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; padding-top: 28px; padding-bottom: 28px; }
 .fact { display: flex; gap: 14px; align-items: center; }
 .fact b { display: block; font-size: 15px; line-height: 1.4; }
-.fact span { display: block; color: var(--muted); font-size: 13.5px; line-height: 1.5; }
+.fact div span { display: block; color: var(--muted); font-size: 13.5px; line-height: 1.5; }
 @media (max-width: 1100px) { .facts { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 720px) { .facts { grid-template-columns: 1fr 1fr; } }
 
@@ -549,6 +549,7 @@ html[lang="ta"] .testimonial blockquote p { font-size: clamp(16px, 1.3vw, 18px);
 .doc-full { margin: 0; display: flex; flex-direction: column; gap: 12px; }
 .doc-full img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); box-shadow: var(--shadow-window); background: #fff; }
 .doc-full figcaption { color: var(--muted); font-size: 13.5px; text-align: center; }
+.doc-narrow { max-width: 360px; margin-left: auto; margin-right: auto; }
 .testimonial figcaption b a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
 .testimonial figcaption b a:hover { color: var(--brand); text-decoration-color: currentColor; }
 /* Reviews page: the work (picture) first, the customer's words under it. */

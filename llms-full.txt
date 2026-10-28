@@ -345,6 +345,17 @@ Made for Green & Green Agri Solutions, Udumalai: their monthly power-sale bill f
 - Bill numbers in the company’s own style, starting again each financial year (for example ABC/26-27/001)
 - Saved like any invoice, so payments, balances and reports work as usual
 
+### Recent work: sales and purchase on one bill, for a farm-produce shop in Tamil Nadu
+
+The shop sells to a customer and also buys from the same customer, on one bill. A private version of Invoiceo made for that shop, not part of the free app. It shows (sample images use made-up names and numbers):
+
+- Sale and Purchase items on the same bill: the shop sells to the customer and also buys from the same customer
+- Purchase items use the product’s buying price, and the rate can be changed on the bill
+- Grand Total = Sales − Purchase, shown as “Pay customer” when the shop owes the customer
+- Stock goes down on a sale and up on a purchase, and is corrected if a bill is edited or deleted
+- Receipt for 58 mm and 80 mm thermal printers, with a SALES and a PURCHASE section
+- No GST on the bill, and it works with the products already in the app
+
 ## Customer reviews
 
 Real customers only, shown with their permission, in words they have approved (https://invoiceo.in/reviews.html).
