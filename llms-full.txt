@@ -345,7 +345,7 @@ Made for Green & Green Agri Solutions, Udumalai: their monthly power-sale bill f
 - Bill numbers in the company’s own style, starting again each financial year (for example ABC/26-27/001)
 - Saved like any invoice, so payments, balances and reports work as usual
 
-### Recent work: sales and purchase on one bill, for a farm-produce shop in Tamil Nadu
+### Recent work: sales and purchase on one bill, for a farm-products shop in Tamil Nadu
 
 The shop sells to a customer and also buys from the same customer, on one bill. A private version of Invoiceo made for that shop, not part of the free app. It shows (sample images use made-up names and numbers):
 
