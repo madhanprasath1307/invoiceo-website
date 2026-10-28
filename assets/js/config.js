@@ -1,8 +1,8 @@
 /* The one place for site settings. Leave a value empty ('') and the button or
    block that needs it is hidden (or shows "coming soon") — nothing breaks. */
 window.INVOICEO = {
-  version: '1.0.7',
-  releaseDate: '23 October 2026',
+  version: '1.0.8',
+  releaseDate: '28 October 2026',
 
   // WhatsApp number with country code, digits only, e.g. '919876543210'.
   whatsapp: '919025537550',
@@ -19,5 +19,5 @@ window.INVOICEO = {
   analyticsId: 'G-9KTHWETYYB',
 
   // Installer sizes shown on the Download page, e.g. '28 MB'. Empty = not shown.
-  sizes: { windows: '19.6 MB', mac: '34.3 MB', linuxDeb: '24.8 MB', linuxAppImage: '29.8 MB' }
+  sizes: { windows: '18.7 MB', mac: '32.7 MB', linuxDeb: '23.6 MB', linuxAppImage: '28.4 MB' }
 };

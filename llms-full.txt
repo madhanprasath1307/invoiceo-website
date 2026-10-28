@@ -2,7 +2,7 @@
 
 > Invoiceo is free, open-source (MIT) offline billing and GST invoice software for Windows, macOS and Linux, made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
 
-- Current version: 1.0.7, released 23 October 2026 (2026-10-23)
+- Current version: 1.0.8, released 28 October 2026 (2026-10-28)
 - Made by: Madcreations, India
 - Website: https://invoiceo.in/ (also in Tamil: https://invoiceo.in/ta.html, and Hindi: https://invoiceo.in/hi.html)
 - Price: free, with no subscription, trial or paid tier; custom features are a paid service, quoted per request
@@ -373,6 +373,12 @@ Real customers only, shown with their permission, in words they have approved (h
 ## Release notes
 
 Every release, newest first (https://invoiceo.in/changelog.html).
+
+### Version 1.0.8 (28 October 2026, 2026-10-28)
+
+- **Easier sign-in.** Click the arrow in the Username box to pick your account from a list, and Invoiceo remembers who signed in last on that computer, so you only type the password.
+- **Letter case no longer matters.** “ravi”, “Ravi” and “RAVI” open the same account. Your username can be any name you can remember, including your email address. Two older accounts that differ only by case (for example “Bob” and “bob”) still need the exact spelling, and a new account can no longer be made with a name that differs from an existing one only by case.
+- Your data and accounts are unchanged: this release needs no database upgrade.
 
 ### Version 1.0.7 (23 October 2026, 2026-10-23)
 
