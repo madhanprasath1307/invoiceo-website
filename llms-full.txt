@@ -10,7 +10,7 @@
 
 ## What Invoiceo is
 
-Free billing software that works offline. Create GST invoices, quotations and receipts on your own computer. Invoiceo is a free, open-source desktop app — no subscription, no sign-up, and your business data never leaves your PC.
+Free billing software that works offline. Create GST invoices, quotations and receipts on your own computer. Invoiceo is a free, open-source desktop app — no invoice limit, no subscription, no sign-up, and your business data never leaves your PC.
 
 ## Why Invoiceo
 
@@ -148,6 +148,96 @@ Download page: https://invoiceo.in/download.html. Every installer is free, with 
 
 Download the new installer and install it over the old version. Your data is kept, but make a backup first from **Settings → Backup** in the app. The [release notes for every version](https://invoiceo.in/changelog.html) show what changed.
 
+## How Invoiceo compares (https://invoiceo.in/compare.html)
+
+Checked on 31 October 2026 from each company’s own website. "Not listed" means their page did not say. Plans and limits change.
+
+**The free plan**
+
+- Invoiceo: Free forever. Every feature included, no limit on invoices, customers or computers
+- Vyapar: Basic features free on mobile; desktop is a free trial
+- myBillBook: Free sign-up; plan prices are on a separate page
+- Tally: 7-day free trial, then paid plans
+- Sleek Bill: Free basic version, limited to 10 documents a month
+
+**Works without internet**
+
+- Invoiceo: Yes, fully
+- Vyapar: Offline billing, then syncs to the cloud
+- myBillBook: Apps with real-time cloud sync
+- Tally: Yes
+- Sleek Bill: Yes
+
+**Sign-up or account**
+
+- Invoiceo: None
+- Vyapar: Phone number to download
+- myBillBook: Sign-up
+- Tally: Form for the free trial
+- Sleek Bill: Direct download, no sign-up
+
+**Where your data is kept**
+
+- Invoiceo: Only on your computer
+- Vyapar: Your device, with cloud backup and sync
+- myBillBook: Cloud
+- Tally: Your computer
+- Sleek Bill: Your PC, with optional sync
+
+**Open source**
+
+- Invoiceo: Yes (MIT License)
+- Vyapar: No
+- myBillBook: No
+- Tally: No
+- Sleek Bill: No
+
+**Phone app**
+
+- Invoiceo: No, computers only
+- Vyapar: Yes
+- myBillBook: Yes
+- Tally: Not listed
+- Sleek Bill: Not listed
+
+**GST returns, e-invoice, e-way bill**
+
+- Invoiceo: Not built in. A Tax report by rate (CSV or PDF) for your accountant
+- Vyapar: E-invoice, e-way bill and GST returns
+- myBillBook: GSTR-1, 2, 3B, e-invoice and e-way bill
+- Tally: GSTR-1, GSTR-3B, e-way bill and e-invoicing
+- Sleek Bill: GSTR-1, GSTR-3B and GSTR-2A reports
+
+**Send bills on WhatsApp or email**
+
+- Invoiceo: Not built in. Save the PDF and attach it
+- Vyapar: WhatsApp sharing and reminders
+- myBillBook: WhatsApp and SMS reminders
+- Tally: Not listed
+- Sleek Bill: Optional email of invoices
+
+**Accounting**
+
+- Invoiceo: Sales, tax, profit, receivables and stock reports. No ledgers or balance sheet
+- Vyapar: Accounting as an add-on
+- myBillBook: Bookkeeping and bank reconciliation
+- Tally: Full accounting
+- Sleek Bill: Ledgers, profit and loss, cash and bank book
+
+**Languages**
+
+- Invoiceo: 8 app languages; Tamil prints correctly on PDFs and receipts
+- Vyapar: 9+ Indian languages
+- myBillBook: Not listed
+- Tally: Not listed
+- Sleek Bill: Not listed
+
+Choose Invoiceo if: You want billing that is free for good, with no invoice cap and no trial that ends; You want your data on your own computer, with no sign-up and no cloud account; You print on A4 or 58/80 mm thermal printers, or need Tamil or Hindi on your bills; You want open-source software, or a small custom feature made for your business at a fair price.
+
+Choose another if: You file GST returns from the software, or need e-invoice and e-way bill; You need a phone app, or several shops or computers working on the same data; You want WhatsApp or SMS reminders sent from the software; You need full accounting with ledgers and a balance sheet.
+
+Not built in to Invoiceo: GSTR-1 and GSTR-3B files, e-invoice and e-way bill; Sending an invoice on WhatsApp or email from inside the app; A phone app (it runs on Windows, macOS and Linux computers); A supplier and purchase section (the app records sales); Live sharing of data between computers, or a cloud version; Ledgers, balance sheet and full accounting.
+
 ## Frequently asked questions
 
 ### About Invoiceo
@@ -235,6 +325,32 @@ Download the new version from the [Download page](https://invoiceo.in/download.h
 **How do I move to a new computer?**
 
 Make a backup of each company on the old computer, copy the backup file to the new one, [install Invoiceo there](https://invoiceo.in/download.html) and import the backup from **Settings → Backup**.
+
+### Limits and what is not built in
+
+**Is there any limit on invoices?**
+
+No. There is no limit on invoices, customers, products or computers, and no trial period. Every feature is included.
+
+**Does Invoiceo file GST returns, or make e-invoices and e-way bills?**
+
+Not built in. Invoiceo prints correct GST invoices and gives a **Tax report** by tax rate (taxable amount and tax) that you can save as CSV or PDF and give to your accountant. It does not make GSTR-1 or GSTR-3B files, e-invoices or e-way bills. If you need these, they can be built as [paid customization](https://invoiceo.in/customization.html). Tell us the format you need.
+
+**Can I send an invoice on WhatsApp or email from the app?**
+
+Not directly. Save the invoice as a PDF (or print it) and attach it in WhatsApp or email. A one-click send button can be built as [paid customization](https://invoiceo.in/customization.html).
+
+**Can I record purchases and supplier bills?**
+
+The free app records sales and keeps a purchase price and stock count for each product. A separate supplier and purchase section is not part of the free app; it can be built as [paid customization](https://invoiceo.in/customization.html).
+
+**Can two computers use the same data?**
+
+Not live. Each computer keeps its own data, and there is no sync between computers or a cloud version. The simplest setup is one main billing computer where everyone logs in with their own user. To move data to another computer, use **Settings → Backup**. Sharing data between computers can be looked at as [paid customization](https://invoiceo.in/customization.html).
+
+**How is Invoiceo different from Vyapar, myBillBook or Tally?**
+
+Invoiceo is free with no limits, works fully offline, needs no sign-up and is open source. The others have more features, such as GST returns, e-invoicing and phone apps, but their free plans are limited or are trials. See the [side-by-side comparison](https://invoiceo.in/compare.html).
 
 ### Help and custom work
 
