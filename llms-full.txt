@@ -115,7 +115,7 @@ Download page: https://invoiceo.in/download.html. Every installer is free, with 
 - Files: Invoiceo-Setup-Windows.exe (https://invoiceo.in/download.html#windows)
 - Steps:
   1. Open the downloaded file.
-  2. If Windows shows **“Windows protected your PC”**, click **More info**, then **Run anyway**. This appears because the installer is not code-signed yet.
+  2. If Windows shows **“Windows protected your PC”**, click **More info**, then **Run anyway**. This appears because the installer is not code-signed yet. See it with pictures.
   3. Follow the setup. Invoiceo then opens from the Start menu.
 
 ### macOS
@@ -312,7 +312,7 @@ Windows 10 and 11 (64-bit), macOS 12 Monterey or later, and Linux: a .deb for Ub
 
 **Windows says “Windows protected your PC”. Is it safe?**
 
-This message appears for installers that are not code-signed yet. If you downloaded Invoiceo from this website, click **More info** and then **Run anyway**. The [Windows install steps](https://invoiceo.in/download.html#windows) walk you through it.
+This message appears for installers that are not code-signed yet. If you downloaded Invoiceo from this website, click **More info** and then **Run anyway**. The [Windows picture guide](https://invoiceo.in/download.html#windows-warning) shows both screens, and you can check the file with its [SHA-256 fingerprint](https://invoiceo.in/download.html#windows-warning).
 
 **macOS says it cannot check the app for malicious software.**
 

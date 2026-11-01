@@ -333,6 +333,8 @@ code {
 .steps-row h4 { font-size: 18px; line-height: 1.45; font-weight: 700; }
 .steps-row p { font-size: 14px; line-height: 1.6; }
 .steps-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.warn-pic { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+.steps-row li code, .card code { overflow-wrap: anywhere; }
 @media (max-width: 900px) { .steps-row { grid-template-columns: 1fr; } }
 
 /* ── Screenshots ────────────────────────────────────────────────────────── */

@@ -48,8 +48,9 @@
     phoneMeta: 'Invoiceo is a desktop app for Windows, macOS and Linux. Open this page on your computer to install it.',
     free: 'Free', version: 'Version ', alsoBefore: ' · Also for ', alsoAfter: '', and: ' and ',
     started: 'Your download has started.', steps: 'Full install steps', stepsPage: 'download.html', close: 'Close',
+    pics: 'See it with pictures', warnAnchor: 'windows-warning',
     help: {
-      windows: 'Open the file when it has downloaded. If Windows says <b>“Windows protected your PC”</b>, click <b>More info</b>, then <b>Run anyway</b>.',
+      windows: 'Open the file when it has downloaded. If a blue window says <b>“Windows protected your PC”</b>, click <b>More info</b>, then <b>Run anyway</b>.',
       mac: 'Open the file and drag Invoiceo into Applications. The first time, macOS may block it: open <b>System Settings → Privacy &amp; Security</b> and click <b>Open Anyway</b>.',
       linux_deb: 'Install it with <code>sudo apt install ./Invoiceo-Linux.deb</code> in the folder you downloaded it to.',
       linux_appimage: 'Make it runnable with <code>chmod +x Invoiceo-Linux.AppImage</code>, then open it.'
@@ -271,7 +272,7 @@
       document.body.appendChild(toast);
     }
     toast.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>'
-      + '<div><b>' + T.started + '</b> ' + help[0] + ' <a href="' + T.stepsPage + '#' + help[1] + '">' + T.steps + '</a></div>'
+      + '<div><b>' + T.started + '</b> ' + help[0] + ' <a href="' + T.stepsPage + '#' + ((platform === 'windows' && T.warnAnchor) || help[1]) + '">' + ((platform === 'windows' && T.pics) || T.steps) + '</a></div>'
       + '<button type="button" aria-label="' + T.close + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>';
     toast.querySelector('button').addEventListener('click', function () { toast.remove(); toast = null; });
   }
