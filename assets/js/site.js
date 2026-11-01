@@ -334,3 +334,124 @@
     }
   });
 })();
+
+/* First-visit poster ("Help us reach 5,000 downloads", with the count so far). English home page only.
+   The number comes from config.js (milestone.downloads) and nothing shows when it is
+   empty, so the page never states a figure that has not been checked. Shown once per
+   browser for each number; ?milestone on the address shows it again for a preview. */
+(function () {
+  'use strict';
+  var C = window.INVOICEO || {};
+  var M = C.milestone || {};
+  var n = parseInt(M.downloads, 10);
+  if (!n || n < 1) return;
+  if (document.documentElement.lang !== 'en') return;
+  if (!/^\/(index\.html)?$/.test(location.pathname)) return;
+  var key = 'invoiceo_milestone_' + n;
+  var preview = /[?&]milestone(?:[=&]|$)/.test(location.search);
+  try { if (!preview && localStorage.getItem(key)) return; } catch (e) { return; }
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = null, opener = null;
+
+  function remember() { try { localStorage.setItem(key, '1'); } catch (e) {} }
+  function track(action) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'milestone_poster', { action: action, milestone: n, transport_type: 'beacon' });
+    }
+  }
+  function close(action) {
+    if (!root) return;
+    remember();
+    track(action);
+    document.documentElement.classList.remove('mile-open');
+    root.classList.add('mile-out');
+    var gone = root;
+    root = null;
+    document.removeEventListener('keydown', onKey, true);
+    setTimeout(function () { gone.remove(); }, reduce ? 0 : 220);
+    if (opener && opener.focus) opener.focus();
+  }
+  function onKey(e) {
+    if (!root) return;
+    if (e.key === 'Escape') { e.preventDefault(); close('dismiss'); return; }
+    if (e.key !== 'Tab') return;
+    var f = root.querySelectorAll('a[href], button');
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+  function confetti(box) {
+    var colours = ['#60a5fa', '#34d399', '#fbbf24', '#f472b6', '#a78bfa', '#ffffff'];
+    for (var i = 0; i < 30; i++) {
+      var c = document.createElement('i');
+      var size = 6 + Math.random() * 6;
+      c.style.cssText = 'left:' + (Math.random() * 100).toFixed(1) + '%;width:' + size.toFixed(1) + 'px;height:' +
+        (size * (Math.random() > 0.5 ? 1 : 0.45)).toFixed(1) + 'px;background:' + colours[i % colours.length] +
+        ';animation-delay:' + (Math.random() * 1.4).toFixed(2) + 's;animation-duration:' +
+        (2.6 + Math.random() * 1.8).toFixed(2) + 's;--dx:' + (Math.random() * 90 - 45).toFixed(0) + 'px';
+      box.appendChild(c);
+    }
+  }
+  function countUp(el, to) {
+    if (reduce) { el.textContent = to.toLocaleString('en-IN'); return; }
+    var start = null, ms = 1500;
+    function step(t) {
+      if (start === null) start = t;
+      var k = Math.min(1, (t - start) / ms);
+      var eased = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(to * eased).toLocaleString('en-IN');
+      if (k < 1) window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+  }
+  function open() {
+    if (root) return;
+    opener = document.activeElement;
+    var goal = parseInt(M.goal, 10);
+    var goalMode = goal > n;
+    var fmt = function (v) { return v.toLocaleString('en-IN'); };
+    var pct = goalMode ? Math.max(3, Math.min(100, Math.round(n * 100 / goal))) : 0;
+    var asOf = M.asOf ? 'Counted up to ' + M.asOf + '.' : '';
+    // A webfont only this poster uses, loaded when it opens. The page falls back to its own font until it arrives.
+    if (!document.getElementById('mile-font')) {
+      var f = document.createElement('link');
+      f.id = 'mile-font'; f.rel = 'stylesheet';
+      f.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap';
+      document.head.appendChild(f);
+    }
+    root = document.createElement('div');
+    root.className = 'mile';
+    var head = goalMode
+      ? '<p class="mile-eyebrow">Help us reach</p>' +
+        '<h2 id="mile-title" class="mile-title"><span class="mile-big">' + fmt(goal) + '</span><span class="mile-unit">downloads</span></h2>' +
+        '<div class="mile-bar" aria-hidden="true"><span style="--to:' + pct + '%"></span></div>' +
+        '<p class="mile-so"><b class="mile-num">0</b><b>+</b> downloads so far</p>'
+      : '<p class="mile-eyebrow">Thank you</p>' +
+        '<h2 id="mile-title" class="mile-title"><span class="mile-just">Just crossed</span><span class="mile-big"><span class="mile-num">0</span>+</span><span class="mile-unit">downloads</span></h2>';
+    root.innerHTML =
+      '<div class="mile-card" role="dialog" aria-modal="true" aria-labelledby="mile-title">' +
+      '<button type="button" class="mile-x" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>' +
+      '<div class="mile-confetti" aria-hidden="true"></div>' +
+      '<div class="mile-logo"><img src="assets/images/logo.png" alt="Invoiceo" width="196" height="68"></div>' +
+      head +
+      '<p class="mile-sub">Free billing software for your computer.<br>No sign-up. No invoice limit.</p>' +
+      '<div class="mile-actions"><a class="mile-cta" href="download.html">Download free</a></div>' +
+      (asOf ? '<p class="mile-note">' + asOf + '</p>' : '') +
+      '</div>';
+    document.body.appendChild(root);
+    document.documentElement.classList.add('mile-open');
+    var title = root.querySelector('.mile-title');
+    if (goalMode) title.setAttribute('aria-label', 'Help us reach ' + fmt(goal) + ' downloads. ' + fmt(n) + ' plus so far.');
+    else title.setAttribute('aria-label', 'Just crossed ' + fmt(n) + ' plus downloads');
+    if (!reduce) confetti(root.querySelector('.mile-confetti'));
+    countUp(root.querySelector('.mile-num'), n);
+    root.querySelector('.mile-x').addEventListener('click', function () { close('close'); });
+    root.querySelector('.mile-cta').addEventListener('click', function () { remember(); track('download'); });
+    root.addEventListener('click', function (e) { if (e.target === root) close('backdrop'); });
+    document.addEventListener('keydown', onKey, true);
+    root.querySelector('.mile-cta').focus();
+    track('view');
+  }
+  setTimeout(open, preview ? 600 : 3500);
+})();
