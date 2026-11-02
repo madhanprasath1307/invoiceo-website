@@ -24,10 +24,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/site.css?v=b0b7717ac7">
+  <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css?v=f54bb82311">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,13 +81,13 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Invoiceo home"><img src="assets/images/logo.png" alt="Invoiceo" width="196" height="68"></a>
-    <nav class="nav" aria-label="Main"><a href="/#features">Features</a><a href="/#how-it-works">How it works</a><a href="reviews.html">Reviews</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+    <nav class="nav" aria-label="Main"><a href="/#features">Features</a><a href="how-it-works.html">How it works</a><a href="compare.html">Compare</a><a href="reviews.html">Reviews</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
     <div class="header-actions">
       <a class="lang-switch" href="ta.html" hreflang="ta" lang="ta" title="தமிழில் படிக்க">தமிழ்</a><a class="lang-switch" href="hi.html" hreflang="hi" lang="hi" title="हिन्दी में पढ़ें">हिन्दी</a>
       <a class="btn btn-primary header-cta" href="download.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Download free</span></a>
       <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
     </div>
-    <nav class="mobile-nav" id="site-nav" aria-label="Main menu"><a href="/#features">Features</a><a href="/#how-it-works">How it works</a><a href="reviews.html">Reviews</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="compare.html">Compare</a><a href="/#screenshots">Screenshots</a><a href="changelog.html">What’s new</a><div class="mobile-langs"><a href="ta.html" hreflang="ta" lang="ta">தமிழ்</a><a href="hi.html" hreflang="hi" lang="hi">हिन्दी</a></div><a class="btn btn-primary btn-lg btn-block" href="download.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Download free</span></a></nav>
+    <nav class="mobile-nav" id="site-nav" aria-label="Main menu"><a href="/#features">Features</a><a href="how-it-works.html">How it works</a><a href="compare.html">Compare</a><a href="reviews.html">Reviews</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="/#screenshots">Screenshots</a><a href="changelog.html">What’s new</a><div class="mobile-langs"><a href="ta.html" hreflang="ta" lang="ta">தமிழ்</a><a href="hi.html" hreflang="hi" lang="hi">हिन्दी</a></div><a class="btn btn-primary btn-lg btn-block" href="download.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Download free</span></a></nav>
   </div>
 </header>
 <main id="main">
@@ -96,44 +95,16 @@
   <div class="wrap">
     <p class="eyebrow">Legal</p>
     <h1>Terms of use</h1>
-    <p class="lead">Last updated: <time datetime="2026-10-28">28 October 2026</time></p>
+    <p class="lead">The simple rules for using the app and this website.</p><p class="legal-meta"><span>Last updated: <time datetime="2026-10-28">28 October 2026</time></span></p>
   </div>
 </section>
 
 <section class="page-body">
-  <div class="wrap">
-    <div class="prose">
-    <p>These terms apply to the Invoiceo app and to this website, which are provided by Madcreations (“we”). By downloading or using Invoiceo, you agree to them.</p>
-
-    <h2>1. Using Invoiceo</h2>
-    <p>You may download, install and use Invoiceo free of charge, for personal or business use, on as many of your computers as you like. You may share the link to our <a href="download.html">Download page</a>. You may not sell Invoiceo, charge others for copies of it, or present it as your own product.</p>
-
-    <h2>2. Your data and your invoices</h2>
-    <p>Invoiceo stores your data on your own computer. You are responsible for keeping backups, for the details you enter, and for checking that your invoices, tax rates and returns are correct for your business. Invoiceo is a tool to help you prepare invoices; it is not tax or legal advice. How we handle information is explained in the <a href="privacy.html">privacy policy</a>.</p>
-
-    <h2>3. No warranty</h2>
-    <p>Invoiceo is provided “as is”, without any warranty. We work to keep it reliable, but we cannot promise that it will be free of errors or suitable for every purpose.</p>
-
-    <h2>4. Limitation of liability</h2>
-    <p>To the extent the law allows, we are not liable for any loss of data, profit or business, or for any indirect damage, arising from the use of Invoiceo or this website. Where liability cannot be excluded, it is limited to the amount you paid us for the work concerned.</p>
-
-    <h2>5. Paid customization</h2>
-    <p>Custom features and changes are a separate, paid service. For each request we agree in writing on what will be delivered, the price, the payment terms and an expected timeline before any work starts. Delivery dates are estimates. Work we deliver for you comes with the same terms as the rest of Invoiceo unless we agree otherwise in writing. See <a href="customization.html">how custom work is requested and quoted</a>.</p>
-
-    <h2>6. Third-party software</h2>
-    <p>Invoiceo is built on Invoiso, which is released under the MIT License. The licence text and other notices are on the <a href="licenses.html">Licenses page</a>. Those licences apply to the parts they cover.</p>
-
-    <h2>7. Links to other sites</h2>
-    <p>This website and the app link to services we do not run, such as Google Forms, GitHub, WhatsApp and Buy Me a Coffee. Their own terms apply when you use them.</p>
-
-    <h2>8. Changes</h2>
-    <p>We may update these terms. The date at the top shows the latest version. Continuing to use Invoiceo after a change means you accept the new terms.</p>
-
-    <h2>9. Governing law</h2>
-    <p>These terms are governed by the laws of India.</p>
-
-    <h2>10. Contact</h2>
-    <p>Madcreations, India · <a href="mailto:madhanprasat2002r@gmail.com">madhanprasat2002r@gmail.com</a></p>
+  <div class="wrap legal-wrap">
+    <nav class="legal-nav" aria-label="On this page"><p class="ln-title">On this page</p><a class="lg1" href="#using-invoiceo"><b>01</b><span>Using Invoiceo</span></a><a class="lg2" href="#your-data-and-your-invoices"><b>02</b><span>Your data and your invoices</span></a><a class="lg3" href="#no-warranty"><b>03</b><span>No warranty</span></a><a class="lg4" href="#limitation-of-liability"><b>04</b><span>Limitation of liability</span></a><a class="lg5" href="#paid-customization"><b>05</b><span>Paid customization</span></a><a class="lg1" href="#third-party-software"><b>06</b><span>Third-party software</span></a><a class="lg2" href="#links-to-other-sites"><b>07</b><span>Links to other sites</span></a><a class="lg3" href="#changes"><b>08</b><span>Changes</span></a><a class="lg4" href="#governing-law"><b>09</b><span>Governing law</span></a><a class="lg5" href="#contact"><b>10</b><span>Contact</span></a><p class="ask">Questions? <a href="mailto:madhanprasat2002r@gmail.com">Write to us</a>.</p></nav>
+    <div class="legal-main" data-chips="Free for any business|Your data, your backups|Open source (MIT)">
+      <div class="legal-intro"><p>These terms apply to the Invoiceo app and to this website, which are provided by Madcreations (“we”). By downloading or using Invoiceo, you agree to them.</p></div>
+      <section class="legal-sec lg1" id="using-invoiceo"><h2><b>01</b><span>Using Invoiceo</span></h2><div class="prose"><p>You may download, install and use Invoiceo free of charge, for personal or business use, on as many of your computers as you like. You may share the link to our <a href="download.html">Download page</a>. You may not sell Invoiceo, charge others for copies of it, or present it as your own product.</p></div></section><section class="legal-sec lg2" id="your-data-and-your-invoices"><h2><b>02</b><span>Your data and your invoices</span></h2><div class="prose"><p>Invoiceo stores your data on your own computer. You are responsible for keeping backups, for the details you enter, and for checking that your invoices, tax rates and returns are correct for your business. Invoiceo is a tool to help you prepare invoices; it is not tax or legal advice. How we handle information is explained in the <a href="privacy.html">privacy policy</a>.</p></div></section><section class="legal-sec lg3" id="no-warranty"><h2><b>03</b><span>No warranty</span></h2><div class="prose"><p>Invoiceo is provided “as is”, without any warranty. We work to keep it reliable, but we cannot promise that it will be free of errors or suitable for every purpose.</p></div></section><section class="legal-sec lg4" id="limitation-of-liability"><h2><b>04</b><span>Limitation of liability</span></h2><div class="prose"><p>To the extent the law allows, we are not liable for any loss of data, profit or business, or for any indirect damage, arising from the use of Invoiceo or this website. Where liability cannot be excluded, it is limited to the amount you paid us for the work concerned.</p></div></section><section class="legal-sec lg5" id="paid-customization"><h2><b>05</b><span>Paid customization</span></h2><div class="prose"><p>Custom features and changes are a separate, paid service. For each request we agree in writing on what will be delivered, the price, the payment terms and an expected timeline before any work starts. Delivery dates are estimates. Work we deliver for you comes with the same terms as the rest of Invoiceo unless we agree otherwise in writing. See <a href="customization.html">how custom work is requested and quoted</a>.</p></div></section><section class="legal-sec lg1" id="third-party-software"><h2><b>06</b><span>Third-party software</span></h2><div class="prose"><p>Invoiceo is built on Invoiso, which is released under the MIT License. The licence text and other notices are on the <a href="licenses.html">Licenses page</a>. Those licences apply to the parts they cover.</p></div></section><section class="legal-sec lg2" id="links-to-other-sites"><h2><b>07</b><span>Links to other sites</span></h2><div class="prose"><p>This website and the app link to services we do not run, such as Google Forms, GitHub, WhatsApp and Buy Me a Coffee. Their own terms apply when you use them.</p></div></section><section class="legal-sec lg3" id="changes"><h2><b>08</b><span>Changes</span></h2><div class="prose"><p>We may update these terms. The date at the top shows the latest version. Continuing to use Invoiceo after a change means you accept the new terms.</p></div></section><section class="legal-sec lg4" id="governing-law"><h2><b>09</b><span>Governing law</span></h2><div class="prose"><p>These terms are governed by the laws of India.</p></div></section><section class="legal-sec lg5" id="contact"><h2><b>10</b><span>Contact</span></h2><div class="prose"><p>Madcreations, India · <a href="mailto:madhanprasat2002r@gmail.com">madhanprasat2002r@gmail.com</a></p></div></section>
     </div>
   </div>
 </section>
@@ -144,19 +115,24 @@
       <div class="foot-brand">
         <img src="assets/images/logo.png" alt="Invoiceo" width="196" height="68" loading="lazy">
         <p>Free, open-source billing software for Windows, macOS and Linux.</p>
-        <a class="coffee" href="https://buymeacoffee.com/madcreations" target="_blank" rel="noopener"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>Buy me a coffee</a>
+        <div class="foot-actions">
+          <a class="btn btn-primary" href="download.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Download free</span></a>
+          <a class="coffee" href="https://buymeacoffee.com/madcreations" target="_blank" rel="noopener"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>Buy me a coffee</a>
+        </div>
       </div>
-      <div><h2>Product</h2><ul><li><a href="/#features">Features</a></li><li><a href="/#how-it-works">How it works</a></li><li><a href="/#screenshots">Screenshots</a></li><li><a href="compare.html">Compare with others</a></li><li><a href="reviews.html">Customer reviews</a></li><li><a href="download.html">Download</a></li><li><a href="changelog.html">What’s new</a></li></ul></div>
+      <div><h2>Product</h2><ul><li><a href="/#features">Features</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="/#screenshots">Screenshots</a></li><li><a href="compare.html">Compare with others</a></li><li><a href="reviews.html">Customer reviews</a></li><li><a href="download.html">Download</a></li><li><a href="changelog.html">What’s new</a></li></ul></div>
       <div><h2>Help</h2><ul><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li data-block><a data-href="forms.support" data-hide-empty target="_blank" rel="noopener">Support request</a></li><li data-block><a data-whatsapp target="_blank" rel="noopener">WhatsApp</a></li><li data-block><a data-href="forms.feedback" data-hide-empty target="_blank" rel="noopener">Feedback</a></li><li><a href="customization.html">Custom features (paid)</a></li></ul></div>
-      <div><h2>Legal</h2><ul><li><a href="licenses.html">Licenses</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="llms.txt">llms.txt</a></li></ul></div>
+      <div><h2>Legal</h2><ul><li><a href="licenses.html">Licenses</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li data-block><a href="#cookie-settings" data-cookie-settings>Cookie settings</a></li><li><a href="llms.txt">llms.txt</a></li></ul></div>
+      <div><h2>Languages</h2><ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="ta.html" hreflang="ta" lang="ta">தமிழ்</a></li><li><a href="hi.html" hreflang="hi" lang="hi">हिन्दी</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <span>© <span data-year>2026</span> Madcreations. Built on Invoiso, released under the <a href="licenses.html">MIT License</a>, © 2025 ANOOP P.</span>
-      <a href="mailto:madhanprasat2002r@gmail.com">madhanprasat2002r@gmail.com</a>
+      <span class="foot-end"><a class="foot-mail" href="mailto:madhanprasat2002r@gmail.com">madhanprasat2002r@gmail.com</a><a class="to-top" href="#" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span>Back to top</span></a></span>
     </div>
   </div>
+  <div class="foot-mark" aria-hidden="true">Invoiceo</div>
 </footer>
 <script src="assets/js/config.js?v=0caee069a8"></script>
-<script src="assets/js/site.js?v=1ac530178a"></script>
+<script src="assets/js/site.js?v=aec8d75cff"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 # Invoiceo: full description
 
-> Invoiceo is free, open-source (MIT) offline billing and GST invoice software for Windows, macOS and Linux, made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
+> Invoiceo is free, open-source (MIT) offline invoicing software for Windows, macOS and Linux (works in any country, with your own tax rates and currency), made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
 
 - Current version: 1.0.8, released 28 October 2026 (2026-10-28)
 - Made by: Madcreations, India
@@ -10,7 +10,7 @@
 
 ## What Invoiceo is
 
-Free billing software that works offline. Create GST invoices, quotations and receipts on your own computer. Invoiceo is a free, open-source desktop app — no invoice limit, no subscription, no sign-up, and your business data never leaves your PC.
+Free billing software that works offline. Create invoices, quotations and receipts on your own computer, with your own tax rates (GST, VAT or sales tax) and your choice of 156 currencies. Invoiceo is a free, open-source desktop app — no invoice limit, no subscription, no sign-up, and your business data never leaves your PC.
 
 ## Why Invoiceo
 
@@ -19,7 +19,7 @@ Free billing software that works offline. Create GST invoices, quotations and re
 - **Your data stays with you**: Customers, products and invoices are saved on your computer, not on someone else’s server.
 - **Open source**: The source code is public under the MIT License. Anyone can check what the app does.
 - **Windows, macOS and Linux**: One app for the computers you already have, with the same features on each.
-- **No lock-in**: Back up any time, restore on another computer, and export your lists to CSV or PDF.
+- **No lock-in**: Back up any time, restore on another computer, and export your lists to CSV and your reports to CSV or PDF.
 
 ## How it works
 
@@ -42,14 +42,14 @@ Free billing software that works offline. Create GST invoices, quotations and re
 
 ### Running the business
 
-- Quotations that become invoices in one click
+- Quotations that become invoices, already filled in
 - Full and part payments, with receipts
 - Customers with outstanding balances
 - Products and services, stock, batch and expiry
 - Sales, tax, receivables, daily and stock reports
 - Import and export lists as CSV
 
-### India & GST
+### Tax & GST
 
 - Your GSTIN and your customer’s on every invoice
 - HSN/SAC codes per product
@@ -61,7 +61,7 @@ Free billing software that works offline. Create GST invoices, quotations and re
 
 - Works with no internet connection
 - Data saved on your own computer
-- Backup and restore in one click
+- Backup and restore from one screen
 - Several companies on one computer
 - Staff logins with admin or user roles
 - No online account needed
@@ -83,11 +83,11 @@ Free billing software that works offline. Create GST invoices, quotations and re
 - **Service and repair shops**: Quick bills for parts and labour, part payments and receipts.
 - **Any small business**: Several companies and staff logins on one computer — all free.
 
-## Made for India, works anywhere
+## Local billing rules, works anywhere
 
 - GSTIN, HSN/SAC and CGST + SGST or IGST
 - UPI QR code on your invoices
-- Amounts in rupees by default
+- Amounts in rupees or the currency you choose
 - Tamil and Hindi on screen and on paper
 - Pick the currency you bill in
 - Eight app languages (Tibetan partly translated)
@@ -268,7 +268,7 @@ Everything you enter is saved on your own computer, in the app’s data folder. 
 
 **Does Invoiceo collect any data?**
 
-Only a few anonymous usage counts, so we know how many people use the app: when it is first opened, once a day while it is used, and once when the first invoice is made. Each count carries a random ID, the app version and the operating system, nothing else. Your customers, products, invoices, amounts and company details are never sent. You can turn the counts off in **Settings → Software Info**. See the [privacy policy](https://invoiceo.in/privacy.html).
+Only a few anonymous usage counts, so we know how many people use the app: when it is first opened, once a day while it is used, and once when the first invoice is made. Each count carries a random ID (the same one on that computer), the app version and the operating system, nothing else. Your customers, products, invoices, amounts and company details are never sent. You can turn the counts off in **Settings → Software Info**. See the [privacy policy](https://invoiceo.in/privacy.html).
 
 ### Billing and printing
 
@@ -276,9 +276,9 @@ Only a few anonymous usage counts, so we know how many people use the app: when 
 
 Yes. You can add your GSTIN and your customers’ GSTINs, HSN/SAC codes and tax rates per product or for the whole invoice. Invoices show CGST and SGST, or IGST for sales to another state, and you can choose titles such as Tax Invoice or Bill of Supply. Invoiceo helps you prepare correct invoices; for filing returns, please follow your accountant’s advice.
 
-**Can I use it outside India?**
+**Can I use it in my country?**
 
-Yes. Choose the currency you bill in and one of eight app languages. GST fields can be turned off in the invoice settings when you don’t need them.
+Yes, in any country. Choose the currency you bill in and one of eight app languages, set your own tax rates, and turn the GST fields off in the invoice settings when you don’t need them.
 
 **Which printers can I use?**
 
@@ -371,7 +371,7 @@ Summary of the privacy policy (https://invoiceo.in/privacy.html):
 ### The Invoiceo app
 
 - **Your business data stays on your computer.** The customers, products, invoices, payments, settings and backups you create are stored on the computer where Invoiceo is installed. We do not receive a copy. The FAQ explains [where your data is stored and how to back it up](https://invoiceo.in/faq.html#about-invoiceo).
-- **Anonymous usage counts.** So that we know how many people use Invoiceo, the app (from [version 1.0.4](https://invoiceo.in/changelog.html#v1.0.4)) sends us a short message when it is first opened, once a day while it is used, and once when the first invoice is created. Each message carries only a random ID made for this purpose, the app version and the operating system (Windows, macOS or Linux). It never includes your customers, products, invoices, amounts or company details. The messages go to a small server we run on Cloudflare, which does not store IP addresses; Cloudflare’s handling is described in the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/). You can turn this off in the app under **Settings → Software Info**.
+- **Anonymous usage counts.** So that we know how many people use Invoiceo, the app (from [version 1.0.4](https://invoiceo.in/changelog.html#v1.0.4)) sends us a short message when it is first opened, once a day while it is used, and once when the first invoice is created. Each message carries only a random ID made for this purpose (it stays the same on that computer, so one computer is counted once), the app version and the operating system (Windows, macOS or Linux). It never includes your customers, products, invoices, amounts or company details. The messages go to a small server we run on Cloudflare, which does not store IP addresses; Cloudflare’s handling is described in the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/). You can turn this off in the app under **Settings → Software Info**.
 - **Update check.** Once a day, when you are online, the app asks GitHub whether a newer version of Invoiceo exists; that is an ordinary web request, so GitHub sees your IP address. Apart from this and the usage counts, the app goes online only when you click a link that opens your web browser.
 - **No online account.** The app’s usernames and passwords exist only on your computer.
 - **No advertising** and no selling of data, ever.
@@ -381,9 +381,9 @@ Summary of the privacy policy (https://invoiceo.in/privacy.html):
 ### This website
 
 - **Hosting.** This site is hosted on GitHub Pages. GitHub may record technical information such as your IP address when you visit, as described in the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Installers are downloaded from GitHub as well.
-- **Fonts.** The text font (Manrope), and the poster font (Poppins) on your first visit to the home page, are loaded from Google Fonts, so your browser fetches them from Google’s servers when a page opens. Google’s handling of this is described in the [Google Privacy Policy](https://policies.google.com/privacy).
-- **Forms.** Our support, customization and feedback forms are Google Forms. What you type into them (such as your name, email, phone number and message) is sent to our Google account so that we can reply. Google’s handling of it is described in the [Google Privacy Policy](https://policies.google.com/privacy).
-- **Analytics.** This website uses Google Analytics to count visits and see which pages and download buttons are used. It sets cookies in your browser for this. Google Analytics does not store IP addresses, and we have turned off its advertising features. We use it only to improve the site. You can block these cookies in your browser settings.
+- **Fonts.** The text font (Manrope), the heading font (Fraunces), Noto Sans Tamil or Noto Sans Devanagari on the Tamil and Hindi pages, and the poster font (Poppins) on your first visit to the home page, are hosted on this website. Your browser does not contact Google to load them.
+- **Forms.** Our support, customization and feedback forms are Google Forms. What you type into them (such as your name, email, phone number and message) is sent to our Google account so that we can reply. Google’s handling of it is described in the [Google Privacy Policy](https://policies.google.com/privacy). The customization page can show its form on the page, but only after you press “Show the form on this page”; until then nothing from Google is loaded there.
+- **Analytics.** This website can use Google Analytics to count visits and see which pages and download buttons are used, **but only if you press Accept** in the cookie box. If you press Decline, or do not answer, no analytics script is loaded and no analytics cookie is set. When you accept, Google Analytics sets cookies in your browser; we have turned off its advertising features, and we use it only to improve the site. You can change your choice at any time with **Cookie settings** in the footer, and declining removes the analytics cookies. Your choice is remembered in your browser (local storage on this site), which is necessary for the box to work.
 - **Email and WhatsApp.** If you contact us, we keep the conversation so that we can help you and follow up.
 
 ## Terms of use (summary)
@@ -564,5 +564,7 @@ Credits for this website:
 
 - **Feather icons**, released under the MIT License, © 2013–2017 Cole Bemis.
 - **Platform logos** (Windows, Apple, Linux) from Simple Icons, released under CC0 1.0. The logos are trademarks of their owners.
-- **Manrope** typeface by Mikhail Sharanda, released under the SIL Open Font License 1.1, served by Google Fonts.
-- **Poppins** typeface by Indian Type Foundry, released under the SIL Open Font License 1.1, served by Google Fonts. It is loaded only for the first-visit poster on the home page.
+- **Manrope** typeface by Mikhail Sharanda, released under the SIL Open Font License 1.1, and hosted on this website.
+- **Fraunces** typeface by Undercase Type, released under the SIL Open Font License 1.1, and hosted on this website. It is used for the headings.
+- **Noto Sans Tamil** and **Noto Sans Devanagari** typefaces by The Noto Project Authors, released under the SIL Open Font License 1.1, and hosted on this website. They are loaded only on the Tamil and Hindi pages.
+- **Poppins** typeface by Indian Type Foundry, released under the SIL Open Font License 1.1, and hosted on this website. It is loaded only for the first-visit poster on the home page.
