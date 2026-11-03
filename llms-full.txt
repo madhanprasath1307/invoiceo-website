@@ -14,10 +14,10 @@ Free billing software that works offline. Create invoices, quotations and receip
 
 ## Why Invoiceo
 
-- **Free forever**: No subscription, no trial, no paid tier. Every feature is included, for as long as you use it.
+- **Free forever**: No subscription, no trial, no paid tier. Every feature is included, for as long as you use it. [How can it be free?](https://invoiceo.in/faq.html#about-invoiceo)
 - **Works offline**: Bill, print and run reports with no internet connection. Internet down? Keep billing.
-- **Your data stays with you**: Customers, products and invoices are saved on your computer, not on someone else’s server.
-- **Open source**: The source code is public under the MIT License. Anyone can check what the app does.
+- **Your data stays with you**: Customers, products and invoices are saved on your computer, not on someone else’s server. [Read the privacy policy.](https://invoiceo.in/privacy.html)
+- **Open source**: The source code is public under the MIT License. Anyone can check what the app does. [See the licence.](https://invoiceo.in/licenses.html)
 - **Windows, macOS and Linux**: One app for the computers you already have, with the same features on each.
 - **No lock-in**: Back up any time, restore on another computer, and export your lists to CSV and your reports to CSV or PDF.
 
@@ -248,7 +248,7 @@ Yes. The app and its updates are free, with no subscription and no trial period.
 
 **Is Invoiceo open source?**
 
-Yes. Invoiceo is released under the MIT License, so anyone can read, use and change the code. It is based on Invoiso by ANOOP P, which is also MIT-licensed.
+Yes. Invoiceo is released under the MIT License, so anyone can read, use and change the code. It is based on Invoiso by ANOOP P, which is also MIT-licensed. See [about Invoiceo](https://invoiceo.in/about.html) and [the licences](https://invoiceo.in/licenses.html).
 
 **How can it be free?**
 
@@ -381,9 +381,9 @@ Summary of the privacy policy (https://invoiceo.in/privacy.html):
 ### This website
 
 - **Hosting.** This site is hosted on GitHub Pages. GitHub may record technical information such as your IP address when you visit, as described in the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Installers are downloaded from GitHub as well.
-- **Fonts.** The text font (Manrope), the heading font (Fraunces), Noto Sans Tamil or Noto Sans Devanagari on the Tamil and Hindi pages, and the poster font (Poppins) on your first visit to the home page, are hosted on this website. Your browser does not contact Google to load them.
+- **Fonts.** The text font (Manrope), the heading font (Fraunces), and Noto Sans Tamil or Noto Sans Devanagari on the Tamil and Hindi pages, are hosted on this website. Your browser does not contact Google to load them.
 - **Forms.** Our support, customization and feedback forms are Google Forms. What you type into them (such as your name, email, phone number and message) is sent to our Google account so that we can reply. Google’s handling of it is described in the [Google Privacy Policy](https://policies.google.com/privacy). The customization page can show its form on the page, but only after you press “Show the form on this page”; until then nothing from Google is loaded there.
-- **Analytics.** This website can use Google Analytics to count visits and see which pages and download buttons are used, **but only if you press Accept** in the cookie box. If you press Decline, or do not answer, no analytics script is loaded and no analytics cookie is set. When you accept, Google Analytics sets cookies in your browser; we have turned off its advertising features, and we use it only to improve the site. You can change your choice at any time with **Cookie settings** in the footer, and declining removes the analytics cookies. Your choice is remembered in your browser (local storage on this site), which is necessary for the box to work.
+- **Analytics.** This website uses Google Analytics to count visits and see which pages and download buttons are used. It sets cookies in your browser for this. Google Analytics does not store IP addresses, and we have turned off its advertising features. We use it only to improve the site. You can block these cookies in your browser settings.
 - **Email and WhatsApp.** If you contact us, we keep the conversation so that we can help you and follow up.
 
 ## Terms of use (summary)
@@ -567,4 +567,3 @@ Credits for this website:
 - **Manrope** typeface by Mikhail Sharanda, released under the SIL Open Font License 1.1, and hosted on this website.
 - **Fraunces** typeface by Undercase Type, released under the SIL Open Font License 1.1, and hosted on this website. It is used for the headings.
 - **Noto Sans Tamil** and **Noto Sans Devanagari** typefaces by The Noto Project Authors, released under the SIL Open Font License 1.1, and hosted on this website. They are loaded only on the Tamil and Hindi pages.
-- **Poppins** typeface by Indian Type Foundry, released under the SIL Open Font License 1.1, and hosted on this website. It is loaded only for the first-visit poster on the home page.

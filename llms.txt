@@ -12,6 +12,7 @@
 - [Home in Tamil](https://invoiceo.in/ta.html): the same page in Tamil (தமிழ்)
 - [Home in Hindi](https://invoiceo.in/hi.html): the same page in Hindi (हिन्दी)
 - [Download](https://invoiceo.in/download.html): installers for Windows, macOS and Linux, with install steps
+- [About](https://invoiceo.in/about.html): who makes Invoiceo, where it comes from and how it stays free
 - [How it works](https://invoiceo.in/how-it-works.html): the five steps from setup to payment, with each step explained
 - [Compare](https://invoiceo.in/compare.html): Invoiceo next to Vyapar, myBillBook, Tally and Sleek Bill, checked 31 October 2026
 - [Customization](https://invoiceo.in/customization.html): paid custom features, quoted per request
