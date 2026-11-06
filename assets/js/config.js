@@ -1,7 +1,7 @@
 /* The one place for site settings. Leave a value empty ('') and the button or
    block that needs it is hidden (or shows "coming soon") — nothing breaks. */
 window.INVOICEO = {
-  version: '1.0.8',
+  version: '1.0.9',
   releaseDate: '28 October 2026',
 
   // WhatsApp number with country code, digits only, e.g. '919876543210'.

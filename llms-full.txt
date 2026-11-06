@@ -2,7 +2,7 @@
 
 > Invoiceo is free, open-source (MIT) offline invoicing software for Windows, macOS and Linux (works in any country, with your own tax rates and currency), made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
 
-- Current version: 1.0.8, released 28 October 2026 (2026-10-28)
+- Current version: 1.0.9, released 6 November 2026 (2026-11-06)
 - Made by: Madcreations, India
 - Website: https://invoiceo.in/ (also in Tamil: https://invoiceo.in/ta.html, and Hindi: https://invoiceo.in/hi.html)
 - Price: free, with no subscription, trial or paid tier; custom features are a paid service, quoted per request
@@ -489,6 +489,14 @@ Real customers only, shown with their permission, in words they have approved (h
 ## Release notes
 
 Every release, newest first (https://invoiceo.in/changelog.html).
+
+### Version 1.0.9 (6 November 2026, 2026-11-06)
+
+- **Pick your username from a list.** On the sign-in screen the Username box is now a list, like the Company box, so nobody has to remember or type a username. Invoiceo still remembers who signed in last on that computer, so you usually only type the password.
+- **“Manage companies” is easier to find.** The small gear at the bottom of the sign-in screen is now a company icon with the words Manage companies next to it.
+- **Dashboard date ranges.** The cards and the Sales Overview chart can show Today, This week, This month, Last month or a Custom range, and the dashboard opens on Today.
+- **A finished page after you update an invoice.** Updating an invoice, quotation or receipt now opens the same finished page as creating one, worded “Updated Successfully!”, with View, Preview, Download, Print and Go to the list.
+- Your data and accounts are unchanged: this release needs no database upgrade.
 
 ### Version 1.0.8 (28 October 2026, 2026-10-28)
 
