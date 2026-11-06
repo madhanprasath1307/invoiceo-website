@@ -472,6 +472,17 @@ The shop sells to a customer and also buys from the same customer, on one bill. 
 - Receipt for 58 mm and 80 mm thermal printers, with a SALES and a PURCHASE section
 - No GST on the bill, and it works with the products already in the app
 
+### Recent work: a tax invoice in the company’s own layout, for Sigma Healthtech, Thane
+
+Their existing bill rebuilt inside Invoiceo as a private version made for that company, not part of the free app. It shows (sample images use made-up names and numbers):
+
+- A tax invoice in the company’s own layout, copied from the bill they already used: logo and details on top, a customer box with the place of supply, and a blue-lined item table that fills the page
+- Product name with its description in brackets (only when there is one), HSN, quantity with unit, rate, taxable value and tax
+- IGST for another state or CGST + SGST within the state, chosen with one switch, and the two halves always add up to the paisa
+- Amount in words, bank details, terms and conditions and a signature box, with “ORIGINAL FOR RECIPIENT” at the top
+- It follows the app’s own settings: switch off the phone, address, bank details or any other field and it is left off the bill
+- The heading follows the title chosen on the bill (Tax Invoice, Cash Bill, Credit Note and more), and a long bill carries on to a second page with the headings repeated
+
 ## Customer reviews
 
 Real customers only, shown with their permission, in words they have approved (https://invoiceo.in/reviews.html).
