@@ -2,7 +2,7 @@
 
 > Invoiceo is free, open-source (MIT) offline invoicing software for Windows, macOS and Linux (works in any country, with your own tax rates and currency), made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
 
-- Current version: 1.0.9, released 6 November 2026 (2026-11-06)
+- Current version: 1.0.10, released 9 November 2026 (2026-11-09)
 - Made by: Madcreations, India
 - Website: https://invoiceo.in/ (also in Tamil: https://invoiceo.in/ta.html, and Hindi: https://invoiceo.in/hi.html)
 - Price: free, with no subscription, trial or paid tier; custom features are a paid service, quoted per request
@@ -500,6 +500,15 @@ Real customers only, shown with their permission, in words they have approved (h
 ## Release notes
 
 Every release, newest first (https://invoiceo.in/changelog.html).
+
+### Version 1.0.10 (9 November 2026, 2026-11-09)
+
+- **A clearer “Forgot password?” page.** The Reset Password page now explains the three steps: send support your Installation ID and username, wait for the Response Code, then enter it. The Installation ID has a copy button, and an **Open the support form** button takes you straight to the support page.
+- **Skip for now on the first password change.** The first time you sign in with the starting password, you can set your own password or skip it and change it later. The page comes back at the next sign-in, so you are reminded.
+- **Easier first sign-in.** On a new install the starting username and password (admin and admin) are shown in plain letters, so you can see what is filled in.
+- **A back arrow on Change Password.** When you open Change Password from the user menu, an arrow at the top takes you back without changing anything.
+- **Change the language on the sign-in pages.** A language button at the top right of the sign-in page and the Forgot password page lets you switch language before you sign in.
+- Your data and accounts are unchanged: this release needs no database upgrade.
 
 ### Version 1.0.9 (6 November 2026, 2026-11-06)
 
