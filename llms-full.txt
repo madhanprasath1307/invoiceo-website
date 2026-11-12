@@ -2,7 +2,7 @@
 
 > Invoiceo is free, open-source (MIT) offline invoicing software for Windows, macOS and Linux (works in any country, with your own tax rates and currency), made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
 
-- Current version: 1.0.10, released 9 November 2026 (2026-11-09)
+- Current version: 1.0.11, released 12 November 2026 (2026-11-12)
 - Made by: Madcreations, India
 - Website: https://invoiceo.in/ (also in Tamil: https://invoiceo.in/ta.html, and Hindi: https://invoiceo.in/hi.html)
 - Price: free, with no subscription, trial or paid tier; custom features are a paid service, quoted per request
@@ -512,6 +512,11 @@ Real customers only, shown with their permission, in words they have approved (h
 ## Release notes
 
 Every release, newest first (https://invoiceo.in/changelog.html).
+
+### Version 1.0.11 (12 November 2026, 2026-11-12)
+
+- **Bills now say “Invoice No.” instead of “#”.** On the Classic, Modern and Executive invoice designs, the number now reads “Invoice No: INV-00000012” instead of “#: INV-00000012”. Quotations say Quotation No, receipts Receipt No, and bills with a GST title such as Credit Note, Debit Note or Bill of Supply use that name. The Minimal design gets an “INVOICE NO” heading above the number.
+- Your data and settings are unchanged: this release needs no database upgrade.
 
 ### Version 1.0.10 (9 November 2026, 2026-11-09)
 
