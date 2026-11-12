@@ -10,7 +10,7 @@
 
 ## What Invoiceo is
 
-Free billing software that works offline. Create invoices, quotations and receipts on your own computer, with your own tax rates (GST, VAT or sales tax) and your choice of 156 currencies. Invoiceo is a free, open-source desktop app — no invoice limit, no subscription, no sign-up, and your business data never leaves your PC.
+Free billing software that works offline. Create invoices, quotations and receipts on your own computer, with your own tax rates (GST, VAT or sales tax) and your choice of 156 currencies. Invoiceo is a free, open-source desktop app — no invoice limit, no subscription, no online account, and your business data never leaves your PC.
 
 ## Why Invoiceo
 
@@ -107,7 +107,7 @@ App languages: English, Tamil, Hindi, Nepali, French, Spanish, Chinese and Tibet
 
 ## Download and install
 
-Download page: https://invoiceo.in/download.html. Every installer is free, with no sign-up, no licence key and no subscription. SHA-256 checksums are linked on the download page.
+Download page: https://invoiceo.in/download.html. Every installer is free, with no account, no licence key and no subscription. SHA-256 checksums are linked on the download page.
 
 ### Windows
 
@@ -170,7 +170,7 @@ Checked on 31 October 2026 from each company’s own website. "Not listed" means
 
 **Sign-up or account**
 
-- Invoiceo: None
+- Invoiceo: No account. An email or phone number to download
 - Vyapar: Phone number to download
 - myBillBook: Sign-up
 - Tally: Form for the free trial
@@ -232,7 +232,7 @@ Checked on 31 October 2026 from each company’s own website. "Not listed" means
 - Tally: Not listed
 - Sleek Bill: Not listed
 
-Choose Invoiceo if: You want billing that is free for good, with no invoice cap and no trial that ends; You want your data on your own computer, with no sign-up and no cloud account; You print on A4 or 58/80 mm thermal printers, or need Tamil or Hindi on your bills; You want open-source software, or a small custom feature made for your business at a fair price.
+Choose Invoiceo if: You want billing that is free for good, with no invoice cap and no trial that ends; You want your data on your own computer, with no online account and no cloud; You print on A4 or 58/80 mm thermal printers, or need Tamil or Hindi on your bills; You want open-source software, or a small custom feature made for your business at a fair price.
 
 Choose another if: You file GST returns from the software, or need e-invoice and e-way bill; You need a phone app, or several shops or computers working on the same data; You want WhatsApp or SMS reminders sent from the software; You need full accounting with ledgers and a balance sheet.
 
@@ -260,7 +260,7 @@ No. Invoiceo runs on your computer, so you can bill, print and see reports offli
 
 **Do I need to create an account?**
 
-No online account or sign-up is needed. The app has its own login on your computer, so you can protect it with a password and give each person their own username.
+No online account is needed. The app has its own login on your computer, so you can protect it with a password and give each person their own username. Before your first download the website asks for an email or phone number so that we can help you set it up; that is not an account, and nothing is needed to use the app.
 
 **Where is my data stored?**
 
@@ -268,7 +268,7 @@ Everything you enter is saved on your own computer, in the app’s data folder. 
 
 **Does Invoiceo collect any data?**
 
-Only a few anonymous usage counts, so we know how many people use the app: when it is first opened, once a day while it is used, and once when the first invoice is made. Each count carries a random ID (the same one on that computer), the app version and the operating system, nothing else. Your customers, products, invoices, amounts and company details are never sent. You can turn the counts off in **Settings → Software Info**. See the [privacy policy](https://invoiceo.in/privacy.html).
+Only a few anonymous usage counts, so we know how many people use the app: when it is first opened, once a day while it is used, and once when the first invoice is made. Each count carries a random ID (the same one on that computer), the app version and the operating system, nothing else. Your customers, products, invoices, amounts and company details are never sent. You can turn the counts off in **Settings → Software Info**. Separately, the email or phone number you leave on this website before a download is kept only to help you set up and to share updates, and is removed when you ask. See the [privacy policy](https://invoiceo.in/privacy.html).
 
 ### Billing and printing
 
@@ -350,7 +350,7 @@ Not live. Each computer keeps its own data, and there is no sync between compute
 
 **How is Invoiceo different from Vyapar, myBillBook or Tally?**
 
-Invoiceo is free with no limits, works fully offline, needs no sign-up and is open source. The others have more features, such as GST returns, e-invoicing and phone apps, but their free plans are limited or are trials. See the [side-by-side comparison](https://invoiceo.in/compare.html).
+Invoiceo is free with no limits, works fully offline, needs no account and is open source. The others have more features, such as GST returns, e-invoicing and phone apps, but their free plans are limited or are trials. See the [side-by-side comparison](https://invoiceo.in/compare.html).
 
 ### Help and custom work
 
@@ -385,6 +385,18 @@ Summary of the privacy policy (https://invoiceo.in/privacy.html):
 - **Forms.** Our support, customization and feedback forms are Google Forms. What you type into them (such as your name, email, phone number and message) is sent to our Google account so that we can reply. Google’s handling of it is described in the [Google Privacy Policy](https://policies.google.com/privacy). The customization page shows its form on the page, so opening that page loads content from Google, which may set cookies. If you would rather not, the other pages only link to the forms and load nothing from Google until you open one.
 - **Analytics.** This website uses Google Analytics to count visits and see which pages and download buttons are used. It sets cookies in your browser for this. Google Analytics does not store IP addresses, and we have turned off its advertising features. We use it only to improve the site. You can block these cookies in your browser settings.
 - **Email and WhatsApp.** If you contact us, we keep the conversation so that we can help you and follow up.
+- **The download form.** Before a download starts, the website asks for your email or your phone / WhatsApp number (one is enough). The next section explains what happens to it.
+
+### If you leave your email or phone when downloading
+
+This is not a sign-up: no account and no password are created, and you do not need either to use Invoiceo. We ask only so that we can help you get started.
+
+- **What we keep.** What you type (your email, your phone or WhatsApp number, or both), and with it: which installer you chose, the page and its language, where on the page the button was, the country your connection comes from (as Cloudflare reports it), your browser and system in short (for example “Chrome on Windows”), and the date and time. We do not keep your IP address. To stop misuse, our server counts form submissions for one day under a code made from your IP address with a one-way hash that changes every day, and deletes that count early the next day (UTC).
+- **Why.** To help you install and set up Invoiceo, and to tell you about updates, by email or WhatsApp. We do not sell or share it with anyone, and we do not use it for advertising.
+- **Where.** In a database in our own Cloudflare account (the same small server that receives the app’s anonymous usage counts). Cloudflare’s handling is described in the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/).
+- **How long.** Until you ask us to remove it, or at most 2 years after you last filled in the form or our last message to you, whichever is later; after that it is deleted automatically.
+- **Removing it.** Message us on [WhatsApp](https://wa.me/919025537550) at +91 90255 37550, use the [support form](https://invoiceo.in/contact.html), or write to [madhanprasat2002r@gmail.com](mailto:madhanprasat2002r@gmail.com), and we will delete it. If you only want us to stop sending messages, say so and we will.
+- **In your browser.** After you fill in the form, this website notes in your browser (local storage on this site) that you did, so it does not ask again on that browser. If our server cannot be reached, the download still starts, and what you typed waits in your browser until your next visit to the site, is sent once more and is then removed from your browser.
 
 ## Terms of use (summary)
 

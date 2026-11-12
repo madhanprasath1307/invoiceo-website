@@ -16,6 +16,22 @@
     phoneMeta: 'Invoiceo, Windows, macOS और Linux कंप्यूटर के लिए डेस्कटॉप ऐप है। इंस्टॉल करने के लिए यह पेज अपने कंप्यूटर पर खोलिए।',
     free: 'मुफ़्त', version: 'संस्करण ', alsoBefore: ' · ', alsoAfter: ' के लिए भी उपलब्ध', and: ' और ',
     started: 'डाउनलोड शुरू हो गया।', steps: 'पूरे कदम', stepsPage: '', close: 'बंद करें',
+    lead: {
+      title: 'Invoiceo पाइए',
+      sub: 'हमेशा मुफ़्त। बताइए, सेटअप में मदद और नए अपडेट कहाँ भेजें।',
+      one: 'कोई एक काफ़ी है', or: 'या',
+      email: 'ईमेल', phone: 'फ़ोन / WhatsApp नंबर',
+      phoneHint: 'देश का कोड चुनिए, फिर अपना नंबर लिखिए।',
+      ccLabel: 'देश का कोड', ccTop: 'सबसे ज़्यादा', ccAll: 'सभी देश',
+      go: 'सुरक्षित डाउनलोड', busy: 'डाउनलोड शुरू हो रहा है…',
+      note: 'यह साइन-अप नहीं है — न कोई अकाउंट, न पासवर्ड। हम इसे सिर्फ़ Invoiceo सेटअप करने में आपकी मदद और अपडेट भेजने के लिए इस्तेमाल करते हैं। आप कभी भी इसे हटाने के लिए कह सकते हैं।',
+      privacy: 'गोपनीयता नीति',
+      need: 'अपना ईमेल या फ़ोन / WhatsApp नंबर लिखिए।',
+      badEmail: 'ईमेल पता जाँच लीजिए (जैसे name@gmail.com)।',
+      badPhone: 'चुने गए देश के कोड के हिसाब से नंबर जाँच लीजिए।',
+      badPhoneIn: 'नंबर जाँच लीजिए: भारत के मोबाइल नंबर 6, 7, 8 या 9 से शुरू होते हैं।',
+      files: { windows: 'Windows इंस्टॉलर', mac: 'macOS ऐप', linux_deb: 'Linux (.deb)', linux_appimage: 'Linux (AppImage)' }
+    },
     help: {
       windows: 'डाउनलोड पूरा होने पर फ़ाइल खोलिए। अगर <b>“Windows protected your PC”</b> दिखे, तो <b>More info</b> दबाइए, फिर <b>Run anyway</b>।',
       mac: 'फ़ाइल खोलकर Invoiceo को Applications में खींचिए। पहली बार macOS रोके तो <b>System Settings → Privacy &amp; Security</b> खोलकर <b>Open Anyway</b> दबाइए।',
@@ -32,6 +48,22 @@
     phoneMeta: 'Invoiceo, Windows, macOS, Linux கணினிகளுக்கான டெஸ்க்டாப் ஆப். இன்ஸ்டால் செய்ய இந்தப் பக்கத்தை உங்கள் கணினியில் திறக்கவும்.',
     free: 'இலவசம்', version: 'பதிப்பு ', alsoBefore: ' · ', alsoAfter: '-க்கும் உண்டு', and: ' மற்றும் ',
     started: 'டவுன்லோட் தொடங்கிவிட்டது.', steps: 'முழு வழிமுறைகள்', stepsPage: '', close: 'மூடு',
+    lead: {
+      title: 'Invoiceo-வைப் பெறுங்கள்',
+      sub: 'என்றும் இலவசம். இன்ஸ்டால் செய்ய உதவியும் புதிய அப்டேட்களும் எங்கே அனுப்ப வேண்டும் என்று சொல்லுங்கள்.',
+      one: 'ஏதாவது ஒன்று போதும்', or: 'அல்லது',
+      email: 'இமெயில்', phone: 'போன் / WhatsApp எண்',
+      phoneHint: 'நாட்டுக் குறியீட்டைத் தேர்ந்தெடுத்து, பிறகு உங்கள் எண்ணை டைப் செய்யுங்கள்.',
+      ccLabel: 'நாட்டுக் குறியீடு', ccTop: 'அதிகம் பயன்படுபவை', ccAll: 'எல்லா நாடுகளும்',
+      go: 'பாதுகாப்பான டவுன்லோட்', busy: 'டவுன்லோட் தொடங்குகிறது…',
+      note: 'இது பதிவு (sign-up) அல்ல — கணக்கும் இல்லை, பாஸ்வேர்டும் இல்லை. Invoiceo-வை அமைக்க உதவவும் புதிய அப்டேட்களைச் சொல்லவும் மட்டுமே இதைப் பயன்படுத்துவோம். எப்போது வேண்டுமானாலும் இதை நீக்கச் சொல்லலாம்.',
+      privacy: 'தனியுரிமைக் கொள்கை',
+      need: 'உங்கள் இமெயில் அல்லது போன் / WhatsApp எண்ணைக் கொடுங்கள்.',
+      badEmail: 'இமெயில் முகவரியைச் சரிபாருங்கள் (உதா: name@gmail.com).',
+      badPhone: 'தேர்ந்தெடுத்த நாட்டுக் குறியீட்டுக்கு ஏற்ப எண்ணைச் சரிபாருங்கள்.',
+      badPhoneIn: 'எண்ணைச் சரிபாருங்கள்: இந்திய மொபைல் எண்கள் 6, 7, 8 அல்லது 9-ல் தொடங்கும்.',
+      files: { windows: 'Windows இன்ஸ்டாலர்', mac: 'macOS ஆப்', linux_deb: 'Linux (.deb)', linux_appimage: 'Linux (AppImage)' }
+    },
     help: {
       windows: 'டவுன்லோட் முடிந்ததும் ஃபைலைத் திறக்கவும். <b>“Windows protected your PC”</b> என்று வந்தால் <b>More info</b>, பிறகு <b>Run anyway</b> அழுத்தவும்.',
       mac: 'ஃபைலைத் திறந்து Invoiceo-வை Applications-க்குள் இழுத்து விடவும். முதல் முறை macOS தடுத்தால், <b>System Settings → Privacy &amp; Security</b> திறந்து <b>Open Anyway</b> அழுத்தவும்.',
@@ -49,6 +81,22 @@
     free: 'Free', version: 'Version ', alsoBefore: ' · Also for ', alsoAfter: '', and: ' and ',
     started: 'Your download has started.', steps: 'Full install steps', stepsPage: 'download.html', close: 'Close',
     pics: 'See it with pictures', warnAnchor: 'windows-warning',
+    lead: {
+      title: 'Get Invoiceo',
+      sub: 'Free forever. Tell us where to send setup help and updates.',
+      one: 'One is enough', or: 'or',
+      email: 'Email', phone: 'Phone / WhatsApp',
+      phoneHint: 'Pick your country code, then type your number.',
+      ccLabel: 'Country code', ccTop: 'Most used', ccAll: 'All countries',
+      go: 'Secure download', busy: 'Starting your download…',
+      note: 'Not a sign-up — no account, no password. We use this only to help you set up Invoiceo and to share updates. You can ask us to remove it anytime.',
+      privacy: 'Privacy policy',
+      need: 'Enter your email or your phone / WhatsApp number.',
+      badEmail: 'Check this email address (for example, name@gmail.com).',
+      badPhone: 'Check the number for the country code you picked.',
+      badPhoneIn: 'Check the number: Indian mobile numbers start with 6, 7, 8 or 9.',
+      files: { windows: 'Windows installer', mac: 'macOS app', linux_deb: 'Linux (.deb)', linux_appimage: 'Linux (AppImage)' }
+    },
     help: {
       windows: 'Open the file when it has downloaded. If a blue window says <b>“Windows protected your PC”</b>, click <b>More info</b>, then <b>Run anyway</b>.',
       mac: 'Open the file and drag Invoiceo into Applications. The first time, macOS may block it: open <b>System Settings → Privacy &amp; Security</b> and click <b>Open Anyway</b>.',
@@ -364,8 +412,11 @@
   }
 
   // Download tracking (only sends anything when analytics is on).
-  //   download_click       a click on an installer link (GitHub release file)
+  //   download_click       an installer download starting (GitHub release file): straight away for a visitor who
+  //                        already filled in the download form, or after "Secure download" (lead_form: shown)
   //   download_page_click  a click on a link that leads to the Download page or section
+  //   lead_form            the download form opening or being closed without a download (action: open / close)
+  //   lead_submit          the form sent: which fields were filled in (email / phone / both), never what was typed
   function placement(a) {
     if (a.closest('.site-header')) return 'header';
     if (a.closest('.site-footer')) return 'footer';
@@ -376,29 +427,278 @@
     var section = a.closest('section[id]');
     return section ? section.id : 'page_body';
   }
+  function track(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    params.page_path = location.pathname;
+    params.transport_type = 'beacon';
+    window.gtag('event', name, params);
+  }
+
+  // ── Download form: before the first download, an email or a phone / WhatsApp number (one is enough) ──
+  // Not an account: it only lets us send setup help and updates. It goes to our Cloudflare worker
+  // (config.js leadUrl; empty = no form, downloads start straight away). Our server never blocks a
+  // download: if it does not answer in 3 seconds the download starts anyway, and what was typed waits
+  // in this browser to be sent once more on the next page. After that, this browser downloads directly.
+  var LEAD_DONE = 'invoiceo-lead-done', LEAD_QUEUE = 'invoiceo-lead-queue', LEAD_URL = 'invoiceo-lead-url';
+  function lsGet(k) { try { return window.localStorage.getItem(k); } catch (e) { return null; } }
+  function lsSet(k, v) { try { if (v === null) window.localStorage.removeItem(k); else window.localStorage.setItem(k, v); } catch (e) {} }
+  var leadUrl = C.leadUrl || '';
+  if (LOCAL) {
+    // Testing on this computer only: ?leadUrl=http://127.0.0.1:8787/v1/lead sends the form to a local worker
+    // (remembered in this browser; ?leadUrl= alone goes back to config.js), ?leadReset shows the form again.
+    var qs = new URLSearchParams(location.search);
+    if (qs.has('leadUrl')) lsSet(LEAD_URL, qs.get('leadUrl') || null);
+    if (qs.has('leadReset')) { lsSet(LEAD_DONE, null); lsSet(LEAD_QUEUE, null); }
+    leadUrl = lsGet(LEAD_URL) || leadUrl;
+  }
+  // The same rules as the worker (tool/telemetry/worker.js), so whatever the form accepts is stored.
+  var EMAIL_RE = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]{1,64}@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*\.[a-z]{2,24}$/;
+  function normEmail(v) {
+    v = (v || '').trim().toLowerCase();
+    if (!v) return '';
+    return v.length <= 254 && EMAIL_RE.test(v) ? v : null;
+  }
+  // Country codes for the phone field's dropdown: the most used first, then every country.
+  var CC_TOP = 'India|91,United Arab Emirates|971,Saudi Arabia|966,Qatar|974,Kuwait|965,Oman|968,Bahrain|973,Singapore|65,Malaysia|60,Sri Lanka|94,Nepal|977,Bangladesh|880,United States|1,Canada|1,United Kingdom|44,Australia|61';
+  var CC_ALL = 'Afghanistan|93,Albania|355,Algeria|213,Andorra|376,Angola|244,Argentina|54,Armenia|374,Australia|61,Austria|43,Azerbaijan|994,Bahamas|1,Bahrain|973,Bangladesh|880,Barbados|1,Belarus|375,Belgium|32,Belize|501,Benin|229,Bhutan|975,Bolivia|591,Bosnia and Herzegovina|387,Botswana|267,Brazil|55,Brunei|673,Bulgaria|359,Burkina Faso|226,Burundi|257,Cambodia|855,Cameroon|237,Canada|1,Chad|235,Chile|56,China|86,Colombia|57,Congo|242,Costa Rica|506,Croatia|385,Cuba|53,Cyprus|357,Czechia|420,Denmark|45,Djibouti|253,Dominican Republic|1,DR Congo|243,Ecuador|593,Egypt|20,El Salvador|503,Eritrea|291,Estonia|372,Eswatini|268,Ethiopia|251,Fiji|679,Finland|358,France|33,Gabon|241,Gambia|220,Georgia|995,Germany|49,Ghana|233,Greece|30,Guatemala|502,Guinea|224,Guyana|592,Haiti|509,Honduras|504,Hong Kong|852,Hungary|36,Iceland|354,India|91,Indonesia|62,Iran|98,Iraq|964,Ireland|353,Israel|972,Italy|39,Ivory Coast|225,Jamaica|1,Japan|81,Jordan|962,Kazakhstan|7,Kenya|254,Kuwait|965,Kyrgyzstan|996,Laos|856,Latvia|371,Lebanon|961,Lesotho|266,Liberia|231,Libya|218,Lithuania|370,Luxembourg|352,Macau|853,Madagascar|261,Malawi|265,Malaysia|60,Maldives|960,Mali|223,Malta|356,Mauritania|222,Mauritius|230,Mexico|52,Moldova|373,Monaco|377,Mongolia|976,Montenegro|382,Morocco|212,Mozambique|258,Myanmar|95,Namibia|264,Nepal|977,Netherlands|31,New Zealand|64,Nicaragua|505,Niger|227,Nigeria|234,North Macedonia|389,Norway|47,Oman|968,Pakistan|92,Palestine|970,Panama|507,Papua New Guinea|675,Paraguay|595,Peru|51,Philippines|63,Poland|48,Portugal|351,Qatar|974,Romania|40,Russia|7,Rwanda|250,Saudi Arabia|966,Senegal|221,Serbia|381,Seychelles|248,Sierra Leone|232,Singapore|65,Slovakia|421,Slovenia|386,Somalia|252,South Africa|27,South Korea|82,South Sudan|211,Spain|34,Sri Lanka|94,Sudan|249,Suriname|597,Sweden|46,Switzerland|41,Syria|963,Taiwan|886,Tajikistan|992,Tanzania|255,Thailand|66,Togo|228,Trinidad and Tobago|1,Tunisia|216,Turkey|90,Turkmenistan|993,Uganda|256,Ukraine|380,United Arab Emirates|971,United Kingdom|44,United States|1,Uruguay|598,Uzbekistan|998,Venezuela|58,Vietnam|84,Yemen|967,Zambia|260,Zimbabwe|263';
+  function ccOptions(list) {
+    return list.split(',').map(function (x) {
+      var p = x.split('|');
+      return '<option value="' + p[1] + '">' + p[0] + ' (+' + p[1] + ')</option>';
+    }).join('');
+  }
+  // + and digits. A number typed with + (or 00) keeps its own country code; otherwise the code picked
+  // in the dropdown (cc) goes in front. India: 10 digits starting with 6-9 (a leading 0 or 91 is fine).
+  function normPhone(v, cc) {
+    cc = cc || '91';
+    v = (v || '').trim();
+    if (!v) return '';
+    if (v.length > 32 || !/^[+\d\s().-]+$/.test(v)) return null;
+    var d = v.replace(/[\s().-]/g, ''), intl = false;
+    if (d.charAt(0) === '+') { intl = true; d = d.slice(1); }
+    else if (d.slice(0, 2) === '00') { intl = true; d = d.slice(2); }
+    if (!/^\d+$/.test(d)) return null;
+    if (!intl && cc !== '91') {
+      d = d.replace(/^0+/, '');
+      if (d.slice(0, cc.length) === cc && d.length > cc.length + 6) d = d.slice(cc.length);
+      if (d.length < 4 || d.length > 14) return null;
+      d = cc + d;
+      intl = true;
+    }
+    if (!intl) {
+      if (d.length === 11 && d.charAt(0) === '0') d = d.slice(1);
+      else if (d.length === 12 && d.slice(0, 2) === '91') d = d.slice(2);
+      if (!/^[6-9]\d{9}$/.test(d)) return null;
+      d = '91' + d;
+    }
+    if (d.length === 13 && d.slice(0, 3) === '910') d = '91' + d.slice(3);
+    if (d.slice(0, 2) === '91' && !/^91[6-9]\d{9}$/.test(d)) return null;
+    if (d.length < 8 || d.length > 15 || d.charAt(0) === '0') return null;
+    return '+' + d;
+  }
+  // The message for a number normPhone refused: an Indian number of the right length that does not
+  // start with 6-9 gets its own message (the usual mistake); anything else, the general one.
+  function phoneMsg(v, cc) {
+    return (cc || '91') === '91' && /^(\+91|0091|91|0)?[0-5]\d{9}$/.test((v || '').replace(/[\s().-]/g, '')) ? L.badPhoneIn : L.badPhone;
+  }
+  // result: 'sent' (stored), 'rejected' (the server said no: sending again would not help), 'failed' (no answer)
+  function sendLead(data, ms, done) {
+    var over = false;
+    function finish(r) { if (!over) { over = true; done(r); } }
+    if (!leadUrl || !window.fetch) { finish('failed'); return; }
+    var ctl = window.AbortController ? new AbortController() : null;
+    var timer = window.setTimeout(function () { if (ctl) ctl.abort(); finish('failed'); }, ms);
+    window.fetch(leadUrl, {
+      method: 'POST', mode: 'cors', credentials: 'omit', keepalive: true,
+      headers: { 'Content-Type': 'text/plain;charset=UTF-8' },   // a "simple" request: no extra preflight round trip
+      body: JSON.stringify(data), signal: ctl ? ctl.signal : undefined
+    }).then(function (r) {
+      window.clearTimeout(timer);
+      finish(r.ok ? 'sent' : r.status >= 400 && r.status < 500 && r.status !== 408 && r.status !== 429 ? 'rejected' : 'failed');
+    }, function () { window.clearTimeout(timer); finish('failed'); });
+  }
+  // A form that could not be sent last time: one more try, then it is forgotten either way.
+  (function () {
+    var q = lsGet(LEAD_QUEUE);
+    if (!q) return;
+    lsSet(LEAD_QUEUE, null);
+    if (!leadUrl) return;
+    try { sendLead(JSON.parse(q), 10000, function () {}); } catch (e) {}
+  })();
+
+  var SIZE_KEY = { windows: 'windows', mac: 'mac', linux_deb: 'linuxDeb', linux_appimage: 'linuxAppImage' };
+  var SVG = function (inner, extra) {
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"' + (extra || '') + '>' + inner + '</svg>';
+  };
+  var ICON_X = SVG('<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>');
+  var ICON_DL = SVG('<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>');
+  var ICON_SHIELD = SVG('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>');
+  var ICON_MAIL = SVG('<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>');
+  var ICON_PHONE = SVG('<rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>');
+  var ICON_LOCK = SVG('<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>');
+
+  var L = T.lead;
+  var gate = null, gateFor = null, gateOpener = null, gateBusy = false, gateTried = false;
+  function startDownload(href, file, where, form) {
+    showHelp(file.platform);
+    track('download_click', { platform: file.platform, file_name: file.file, placement: where, detected_os: os, lead_form: form });
+    window.location.href = href;
+  }
+  function gateClose(how) {
+    if (!gate) return;
+    if (how) track('lead_form', { action: 'close', how: how, platform: gateFor.file.platform, placement: gateFor.where });
+    document.removeEventListener('keydown', gateKey, true);
+    document.documentElement.classList.remove('dlf-open');
+    gate.remove();
+    gate = null; gateFor = null; gateBusy = false; gateTried = false;
+    if (gateOpener && gateOpener.focus && document.contains(gateOpener)) gateOpener.focus();
+    gateOpener = null;
+  }
+  function gateKey(e) {
+    if (!gate) return;
+    if (e.key === 'Escape') { e.preventDefault(); if (!gateBusy) gateClose('esc'); return; }
+    if (e.key !== 'Tab') return;
+    var f = Array.prototype.filter.call(gate.querySelectorAll('button, input, a[href]'), function (el) {
+      return el.tabIndex >= 0 && !el.disabled && el.offsetParent !== null;
+    });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (!gate.contains(document.activeElement)) { e.preventDefault(); first.focus(); }
+    else if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+  function gateOpen(a, file) {
+    if (gate) return;
+    gateOpener = a;
+    gateFor = { href: a.href, file: file, where: placement(a) };
+    var size = value('sizes.' + SIZE_KEY[file.platform]);
+    var card = document.querySelector('[data-platform="' + (file.platform === 'mac' ? 'mac' : file.platform === 'windows' ? 'windows' : 'linux') + '"] .tile svg');
+    gate = document.createElement('div');
+    gate.className = 'dlf';
+    gate.innerHTML =
+      '<div class="dlf-card" role="dialog" aria-modal="true" aria-labelledby="dlf-title" aria-describedby="dlf-sub">' +
+        '<button type="button" class="dlf-x" aria-label="' + T.close + '">' + ICON_X + '</button>' +
+        '<div class="dlf-head">' +
+          '<span class="dlf-badge">' + ICON_DL + '</span>' +
+          '<h2 id="dlf-title" class="dlf-title">' + L.title + '</h2>' +
+          '<p id="dlf-sub" class="dlf-sub">' + L.sub + '</p>' +
+          '<p class="dlf-file"><span class="dlf-file-ic"></span><span>' + L.files[file.platform] + (size ? ' · ' + size : '') + '</span></p>' +
+        '</div>' +
+        '<form class="dlf-form" novalidate>' +
+          '<div class="dlf-field" data-f="email">' +
+            '<label for="dlf-email">' + L.email + '</label>' +
+            '<div class="dlf-input"><span class="dlf-pre dlf-pre-ic">' + ICON_MAIL + '</span>' +
+              '<input id="dlf-email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" maxlength="254" placeholder="name@example.com" aria-describedby="dlf-email-err"></div>' +
+            '<p class="dlf-err" id="dlf-email-err" hidden></p>' +
+          '</div>' +
+          '<div class="dlf-or" aria-hidden="true"><span>' + L.or + '</span></div>' +
+          '<div class="dlf-field" data-f="phone">' +
+            '<label for="dlf-phone">' + L.phone + '</label>' +
+            '<div class="dlf-input dlf-tel"><span class="dlf-pre dlf-pre-ic">' + ICON_PHONE + '</span><span class="dlf-ccw"><span class="dlf-cc" aria-hidden="true">+91</span><svg class="dlf-cc-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+                '<select id="dlf-cc" aria-label="' + L.ccLabel + '"><optgroup label="' + L.ccTop + '">' + ccOptions(CC_TOP) + '</optgroup><optgroup label="' + L.ccAll + '">' + ccOptions(CC_ALL) + '</optgroup></select></span>' +
+              '<input id="dlf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="24" placeholder="98765 43210" aria-describedby="dlf-phone-hint dlf-phone-err"></div>' +
+            '<p class="dlf-hint" id="dlf-phone-hint">' + L.phoneHint + '</p>' +
+            '<p class="dlf-err" id="dlf-phone-err" hidden></p>' +
+          '</div>' +
+          '<div class="dlf-hp" aria-hidden="true"><label for="dlf-website">Website</label><input id="dlf-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>' +
+          '<p class="dlf-err dlf-need" id="dlf-need" role="alert" hidden></p>' +
+          '<button type="submit" class="btn btn-primary btn-lg btn-block dlf-go"><span class="dlf-spin" aria-hidden="true"></span>' + ICON_SHIELD + '<span class="dlf-go-t">' + L.go + '</span></button>' +
+          '<p class="dlf-note"><span class="dlf-note-ic">' + ICON_LOCK + '</span><span>' + L.note + ' <a href="/privacy.html#if-you-leave-your-email-or-phone-when-downloading" target="_blank" rel="noopener">' + L.privacy + '</a></span></p>' +
+        '</form>' +
+      '</div>';
+    if (card) gate.querySelector('.dlf-file-ic').appendChild(card.cloneNode(true));
+    document.body.appendChild(gate);
+    document.documentElement.classList.add('dlf-open');
+    var form = gate.querySelector('form');
+    var phone = gate.querySelector('#dlf-phone');
+    var tel = gate.querySelector('.dlf-tel');
+    var ccSel = gate.querySelector('#dlf-cc');
+    function ccShown() { tel.classList.toggle('is-intl', /^\s*(\+|00)/.test(phone.value)); }
+    phone.addEventListener('input', ccShown);
+    ccSel.addEventListener('change', function () {
+      gate.querySelector('.dlf-cc').textContent = '+' + ccSel.value;
+      phone.placeholder = ccSel.value === '91' ? '98765 43210' : '';
+      if (gateTried) check(false);
+      phone.focus();
+    });
+    form.addEventListener('input', function () { if (gateTried) check(false); });
+    form.addEventListener('submit', gateSubmit);
+    gate.querySelector('.dlf-x').addEventListener('click', function () { if (!gateBusy) gateClose('x'); });
+    document.addEventListener('keydown', gateKey, true);
+    gate.querySelector('#dlf-email').focus();
+    track('lead_form', { action: 'open', platform: file.platform, placement: gateFor.where });
+  }
+  function showErr(id, msg) {
+    var p = gate.querySelector('#' + id);
+    p.textContent = msg || '';
+    p.hidden = !msg;
+  }
+  // Checks the two fields; shows the messages. Returns {email, phone} or null.
+  function check(focus) {
+    var e = gate.querySelector('#dlf-email'), p = gate.querySelector('#dlf-phone');
+    var cc = (gate.querySelector('#dlf-cc') || {}).value || '91';
+    var email = normEmail(e.value), phone = normPhone(p.value, cc);
+    var none = email === '' && phone === '';
+    showErr('dlf-email-err', email === null ? L.badEmail : '');
+    showErr('dlf-phone-err', phone === null ? phoneMsg(p.value, cc) : '');
+    showErr('dlf-need', none ? L.need : '');
+    e.setAttribute('aria-invalid', email === null || none ? 'true' : 'false');
+    p.setAttribute('aria-invalid', phone === null || none ? 'true' : 'false');
+    if (none) e.setAttribute('aria-describedby', 'dlf-email-err dlf-need'); else e.setAttribute('aria-describedby', 'dlf-email-err');
+    if (email === null || phone === null || none) {
+      if (focus) (email === null || none ? e : p).focus();
+      return null;
+    }
+    return { email: email, phone: phone };
+  }
+  function gateSubmit(ev) {
+    ev.preventDefault();
+    if (gateBusy) return;
+    gateTried = true;
+    var v = check(true);
+    if (!v) return;
+    gateBusy = true;
+    var go = gate.querySelector('.dlf-go');
+    go.classList.add('is-busy');
+    go.setAttribute('aria-disabled', 'true');
+    go.querySelector('.dlf-go-t').textContent = L.busy;
+    gate.querySelectorAll('input').forEach(function (i) { i.readOnly = true; });
+    var f = gateFor;
+    var data = {
+      email: v.email, phone: v.phone, platform: f.file.platform, file: f.file.file,
+      page: location.pathname, lang: (document.documentElement.lang || 'en').slice(0, 2), placement: f.where,
+      hp: gate.querySelector('#dlf-website').value
+    };
+    var t0 = Date.now();
+    sendLead(data, 3000, function (result) {
+      if (result === 'failed') lsSet(LEAD_QUEUE, JSON.stringify(data));
+      lsSet(LEAD_DONE, new Date().toISOString().slice(0, 10));
+      track('lead_submit', { platform: f.file.platform, placement: f.where, fields: v.email && v.phone ? 'both' : v.email ? 'email' : 'phone', result: result === 'failed' ? 'queued' : result });
+      window.setTimeout(function () {
+        gateClose(null);
+        startDownload(f.href, f.file, f.where, 'shown');
+      }, Math.max(0, 600 - (Date.now() - t0)));     // long enough to see the spinner
+    });
+  }
+
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href]');
-    if (!a) return;
+    if (!a || (gate && gate.contains(a))) return;
     var href = a.href;
     var file = installer(href);
-    if (file) showHelp(file.platform);
-    if (typeof window.gtag !== 'function') return;
     if (file) {
-      window.gtag('event', 'download_click', {
-        platform: file.platform,
-        file_name: file.file,
-        placement: placement(a),
-        detected_os: os,
-        page_path: location.pathname,
-        transport_type: 'beacon'
-      });
+      if (leadUrl && !lsGet(LEAD_DONE)) {
+        e.preventDefault();
+        gateOpen(a, file);
+        return;
+      }
+      showHelp(file.platform);
+      track('download_click', { platform: file.platform, file_name: file.file, placement: placement(a), detected_os: os, lead_form: leadUrl ? 'skipped' : 'off' });
     } else if (/\/download\.html(?:[?#]|$)|#download$/.test(href)) {
-      window.gtag('event', 'download_page_click', {
+      track('download_page_click', {
         placement: placement(a),
         link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60),
-        detected_os: os,
-        page_path: location.pathname,
-        transport_type: 'beacon'
+        detected_os: os
       });
     }
   });
@@ -476,6 +776,8 @@
   }
   function open() {
     if (root) return;
+    // The download form is already open (someone clicked Download first): no poster on this visit.
+    if (document.querySelector('.dlf')) return;
     opener = document.activeElement;
     var goal = parseInt(M.goal, 10);
     var goalMode = goal > n;

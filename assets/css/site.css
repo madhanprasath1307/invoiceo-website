@@ -2011,3 +2011,182 @@ section[aria-labelledby="rv-write"] h2 { font-family: var(--serif); font-weight:
 .byline { margin: 0; font-size: 14px; line-height: 1.5; color: #5b687c; }
 .byline a { color: #1558c0; font-weight: 700; }
 .page-head .byline { margin-top: -4px; }
+
+
+/* Download form (site.js): an email or a phone / WhatsApp number before the first download. Not an account.
+   Drawn like the rest of the site: the milestone poster's backdrop and close button, the Download and Contact
+   cards' accent stripe and soft icon tile, a Fraunces title, the hero's pills and primary button, and the
+   white, hairline-bordered controls of the header. Teal marks the "safe / private" note, as elsewhere. */
+.dlf-open { overflow: hidden; }
+.dlf {
+  position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center;
+  padding: 16px; background: rgba(10, 25, 60, 0.55); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
+  animation: dlf-fade 0.2s ease both; overflow-y: auto;
+}
+.dlf-card {
+  position: relative; width: min(452px, 100%); max-height: calc(100vh - 32px); max-height: calc(100dvh - 32px); overflow-x: hidden; overflow-y: auto;
+  padding: 30px 28px 0; border-radius: 26px; color: var(--body); font-family: var(--font); text-align: left;
+  background: #fff; border: 1px solid #d5e4fb; box-shadow: 0 34px 90px rgba(10, 25, 60, 0.38), 0 2px 8px rgba(10, 25, 60, 0.08);
+  animation: dlf-pop 0.32s cubic-bezier(0.2, 0.9, 0.3, 1.1) both;
+}
+/* the accent stripe of the Download and Contact cards, brand blue into teal */
+.dlf-card::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px; pointer-events: none;
+  background: linear-gradient(90deg, var(--brand), #14b8a6 55%, rgba(20, 184, 166, 0) 92%);
+}
+.dlf-x {
+  position: absolute; top: 14px; right: 14px; z-index: 2; width: 40px; height: 40px; padding: 0; border-radius: 50%;
+  border: 1px solid #d5e4fb; background: #fff; color: #14234a; cursor: pointer; box-shadow: 0 6px 16px rgba(40, 90, 190, 0.12);
+  display: inline-flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s;
+}
+.dlf-x:hover { background: #f2f7ff; transform: rotate(90deg); }
+.dlf-x svg { width: 18px; height: 18px; }
+
+/* Head: icon tile, Fraunces title, lead, the file as a hero pill */
+.dlf-head { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 12px; }
+.dlf-badge {
+  display: inline-flex; align-items: center; justify-content: center; width: 54px; height: 54px; border-radius: 17px;
+  color: #1d5fd1; background: linear-gradient(135deg, #e6f0ff, #fff); box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.07);
+}
+.dlf-badge svg { width: 24px; height: 24px; }
+.dlf-title { margin-top: 14px; font-family: var(--serif); font-weight: var(--serif-w); font-size: 31px; line-height: 1.12; letter-spacing: -0.015em; color: #14234a; }
+.dlf-sub { margin: 8px auto 0; max-width: 33ch; font-size: 15.5px; line-height: 1.55; font-weight: 500; color: var(--body); text-wrap: pretty; }
+/* Tamil and Hindi: the sans-serif title needs more line height; the lead may run wider */
+html[lang="ta"] .dlf-title, html[lang="hi"] .dlf-title { font-size: 27px; line-height: 1.32; letter-spacing: 0; }
+html[lang="ta"] .dlf-sub, html[lang="hi"] .dlf-sub { max-width: 30em; font-size: 15px; }
+html[lang="hi"] .dlf-note, html[lang="hi"] .dlf-hint { font-size: 13px; }
+/* Tamil runs longest: a slightly wider card so the title stays on one line */
+html[lang="ta"] .dlf-card { width: min(500px, 100%); }
+html[lang="ta"] .dlf-head { padding: 0; }
+.dlf-file {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding: 5px 13px 5px 10px; border-radius: 999px;
+  background: var(--muted-bg); font-size: 13.5px; line-height: 1.4; font-weight: 700; color: var(--body);
+}
+.dlf-file-ic { display: inline-flex; color: var(--ink); }
+.dlf-file-ic:empty { display: none; }
+.dlf-file-ic svg { width: 16px; height: 16px; }
+
+/* Fields: white, a hairline border like the header buttons, a brand ring on focus */
+.dlf-form { margin-top: 22px; }
+.dlf-field > label { display: block; margin: 0 0 7px; font-size: 14px; line-height: 1.3; font-weight: 700; color: var(--ink); }
+.dlf-input {
+  display: flex; align-items: center; min-height: 50px; border-radius: 12px; border: 1px solid var(--line-2); background: #fff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); transition: border-color 0.15s, box-shadow 0.15s; overflow: hidden;
+}
+.dlf-input:hover { border-color: var(--faint); }
+.dlf-input:focus-within { border-color: var(--brand); box-shadow: 0 0 0 4px rgba(31, 111, 235, 0.14); }
+.dlf-input:has(input[aria-invalid="true"]) { border-color: #d92d20; }
+.dlf-input:has(input[aria-invalid="true"]):focus-within { box-shadow: 0 0 0 4px rgba(217, 45, 32, 0.12); }
+.dlf-pre { flex: none; display: inline-flex; align-items: center; padding-left: 15px; color: var(--faint); transition: color 0.15s; }
+.dlf-input:focus-within .dlf-pre { color: var(--brand); }
+.dlf-pre svg { width: 18px; height: 18px; }
+.dlf-input input {
+  flex: 1; min-width: 0; height: 48px; padding: 0 14px 0 11px; border: 0; outline: 0; background: transparent; border-radius: 0;
+  font: 600 16px/1.2 var(--font); color: var(--ink);
+}
+.dlf-input input::placeholder { color: #7b8799; font-weight: 500; }
+/* Country code: a native select laid invisibly over "+91 ▾", so the list is the system's own (keyboard and phones).
+   It sits as a tinted segment at the start of the phone field; the phone icon only shows when it is hidden. */
+.dlf-tel:not(.is-intl) .dlf-pre { display: none; }
+.dlf-ccw {
+  position: relative; flex: none; align-self: stretch; display: inline-flex; align-items: center; gap: 4px;
+  padding: 0 10px 0 14px; background: var(--soft-blue); border-right: 1px solid var(--line); transition: background 0.15s;
+}
+.dlf-ccw:hover, .dlf-ccw:focus-within { background: var(--brand-tint); }
+.dlf-ccw:hover .dlf-cc, .dlf-ccw:focus-within .dlf-cc { color: var(--brand-dark); }
+/* keyboard focus on the country code, so it is told apart from focus on the number */
+.dlf-ccw:focus-within { box-shadow: inset 0 0 0 2px var(--brand); }
+.dlf-ccw:focus-within .dlf-cc-chev { color: var(--brand); }
+.dlf-cc { font-size: 15.5px; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+.dlf-cc-chev { width: 16px; height: 16px; color: var(--muted); }
+.dlf-ccw select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; border: 0; }
+.dlf-tel.is-intl .dlf-ccw { display: none; }
+.dlf-hint { margin: 7px 0 0; font-size: 13px; line-height: 1.45; color: var(--muted); }
+.dlf-err { margin: 7px 0 0; font-size: 13.5px; line-height: 1.45; font-weight: 700; color: #b42318; }
+.dlf-err[hidden] { display: none; }
+/* While the number has an error, the error takes the hint's place (it says what to fix), so the card
+   does not grow past short screens and phones in the error state. */
+.dlf-field:has(.dlf-err:not([hidden])) .dlf-hint { display: none; }
+.dlf-need { margin: 14px 0 0; padding: 10px 14px; border-radius: 12px; background: #fef3f2; }
+
+/* "or": a small pill on a hairline */
+.dlf-or { display: flex; align-items: center; gap: 10px; margin: 14px 0 12px; }
+.dlf-or::before, .dlf-or::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.dlf-or span {
+  padding: 3px 11px; border-radius: 999px; background: #fff; border: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.4; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+html[lang="ta"] .dlf-or span, html[lang="hi"] .dlf-or span { text-transform: none; letter-spacing: 0; font-size: 13px; font-weight: 700; }
+
+.dlf-hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+/* The hero's primary button */
+.dlf-go { margin-top: 20px; position: relative; border-radius: 12px; box-shadow: 0 12px 28px rgba(31, 111, 235, 0.32); }
+.dlf-go:hover { box-shadow: 0 14px 32px rgba(31, 111, 235, 0.38); }
+.dlf-go.is-busy { cursor: progress; pointer-events: none; background: var(--brand-dark); border-color: var(--brand-dark); color: #fff; box-shadow: none; }
+.dlf-go.is-busy > svg { display: none; }
+.dlf-spin { display: none; width: 18px; height: 18px; border-radius: 50%; border: 2.5px solid rgba(255, 255, 255, 0.35); border-top-color: #fff; animation: dlf-spin 0.7s linear infinite; }
+.dlf-go.is-busy .dlf-spin { display: inline-block; }
+/* Small print at the foot of the card, on the soft blue of the site's quiet sections, with a teal lock */
+.dlf-note {
+  display: flex; align-items: flex-start; gap: 10px; margin: 20px -28px 0; padding: 14px 28px 16px;
+  background: var(--soft-blue); border-top: 1px solid #e3ecfa;
+  font-size: 12.5px; line-height: 1.55; color: var(--muted); text-wrap: pretty;
+}
+.dlf-note-ic { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-top: 1px; border-radius: 999px; background: var(--teal-tint); color: var(--teal); }
+.dlf-note-ic svg { width: 12px; height: 12px; stroke-width: 2.6; }
+.dlf-note a { color: var(--brand-dark); font-weight: 700; white-space: nowrap; }
+@keyframes dlf-fade { from { opacity: 0; } }
+@keyframes dlf-pop { from { opacity: 0; transform: translateY(14px) scale(0.97); } }
+@keyframes dlf-rise { from { opacity: 0; transform: translateY(40px); } }
+@keyframes dlf-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .dlf-spin { animation: dlf-spin 1.6s linear infinite !important; } }
+/* Short screens (1280 x 720 and below): a little less air */
+@media (max-height: 760px) and (min-width: 481px) {
+  .dlf-card { padding-top: 24px; }
+  .dlf-badge { width: 48px; height: 48px; border-radius: 15px; }
+  .dlf-badge svg { width: 22px; height: 22px; }
+  .dlf-title { margin-top: 10px; font-size: 29px; }
+  .dlf-file { margin-top: 12px; }
+  .dlf-form { margin-top: 18px; }
+  .dlf-or { margin: 10px 0 8px; }
+  .dlf-go { margin-top: 16px; }
+  .dlf-note { margin-top: 16px; padding-top: 12px; padding-bottom: 14px; }
+  /* Tamil: no icon tile and a smaller one-line title, clear of the close button */
+  html[lang="ta"] .dlf-card { width: min(580px, 100%); }
+  html[lang="ta"] .dlf-badge { display: none; }
+  html[lang="ta"] .dlf-title { margin-top: 0; padding: 0 44px; font-size: 23px; }
+  html[lang="ta"] .dlf-sub { margin-top: 6px; max-width: none; }
+}
+/* On a phone: a sheet from the bottom, like the milestone poster */
+@media (max-width: 480px) {
+  .dlf { padding: 0; align-items: flex-end; }
+  .dlf-card {
+    width: 100%; max-height: calc(100vh - 12px); max-height: calc(100dvh - 12px); padding: 0 18px;
+    border-radius: 24px 24px 0 0; border-bottom: 0; animation-name: dlf-rise;
+  }
+  .dlf-head { padding: 0; }
+  .dlf-badge { width: 48px; height: 48px; border-radius: 15px; }
+  .dlf-badge svg { width: 22px; height: 22px; }
+  .dlf-title { font-size: 27px; margin-top: 12px; }
+  .dlf-sub { font-size: 15px; }
+  html[lang="ta"] .dlf-title, html[lang="hi"] .dlf-title { font-size: 23px; margin-top: 10px; }
+  html[lang="ta"] .dlf-sub, html[lang="hi"] .dlf-sub { font-size: 14.5px; }
+  .dlf-form { margin-top: 18px; }
+  .dlf-note { margin: 18px -18px 0; padding: 13px 18px calc(16px + env(safe-area-inset-bottom)); }
+  /* Tamil: no icon tile and a little less air, so the sheet does not fill the screen */
+  html[lang="ta"] .dlf-badge { display: none; }
+  html[lang="ta"] .dlf-title { margin-top: 0; padding: 0 40px; }
+  html[lang="ta"] .dlf-file { margin-top: 10px; }
+  html[lang="ta"] .dlf-form { margin-top: 14px; }
+  html[lang="ta"] .dlf-or { margin: 10px 0 8px; }
+  html[lang="ta"] .dlf-go { margin-top: 16px; }
+  html[lang="ta"] .dlf-note { margin-top: 14px; padding-top: 11px; }
+  /* The close button sits in the flow and sticks, so it stays in view when the sheet has to scroll
+     (small phones, long error messages). It also gives the sheet its 26px of top space. */
+  .dlf-x { position: sticky; top: 12px; right: auto; display: flex; margin: 12px -6px -26px auto; }
+}
+/* Short phones (360 x 640 and the like): no icon tile in any language */
+@media (max-width: 480px) and (max-height: 700px) {
+  .dlf-badge { display: none; }
+  .dlf-title { margin-top: 0; }
+}

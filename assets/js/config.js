@@ -15,6 +15,11 @@ window.INVOICEO = {
     feedback: 'https://docs.google.com/forms/d/e/1FAIpQLScAyP1dcMYSECr67mjOiol7-JUWVEguaB719En9OMwbfDOPtg/viewform'
   },
 
+  // The download form (an email or a phone / WhatsApp number before the first download; not an account).
+  // Where it is sent: the leads endpoint of our Cloudflare worker (tool/telemetry in the app repo).
+  // Empty = no form, and every download starts straight away as before.
+  leadUrl: 'https://invoiceo-telemetry.madhanprasat2002r.workers.dev/v1/lead',
+
   // Google Analytics measurement ID, e.g. 'G-XXXXXXXXXX'. Empty = no tracking.
   analyticsId: 'G-9KTHWETYYB',
 
