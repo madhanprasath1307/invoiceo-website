@@ -2208,3 +2208,17 @@ html[lang="ta"] .dl-live-tag b, html[lang="hi"] .dl-live-tag b { letter-spacing:
 .dl-live-unit { font-weight: 700; font-size: 15px; color: var(--body, #334155); }
 @media (max-width: 480px) { .dl-live { margin-left: 0; margin-right: 0; max-width: none; } .dl-live-count { font-size: 34px; } }
 @media (prefers-reduced-motion: reduce) { .dl-dot { animation: none; } }
+
+.dl-live-split { margin-top: 14px; }
+.dl-live-split[hidden] { display: none; }
+.dl-split-bar { display: flex; gap: 3px; height: 9px; border-radius: 99px; overflow: hidden; background: #eef2f7; }
+.dl-split-bar i { display: block; flex: 0 0 auto; min-width: 6px; border-radius: 99px; transition: flex-grow .9s ease; }
+.dl-split-bar i[hidden] { display: none; }
+.dl-split-bar .win, .dl-split-key .win { background: #2563eb; }
+.dl-split-bar .mac, .dl-split-key .mac { background: #475569; }
+.dl-split-bar .lin, .dl-split-key .lin { background: #f59e0b; }
+.dl-split-key { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 0; padding: 0; list-style: none; font-size: 13px; font-weight: 600; color: var(--body, #334155); }
+.dl-split-key li { display: inline-flex; align-items: center; gap: 7px; }
+.dl-split-key .k { width: 9px; height: 9px; border-radius: 50%; }
+.dl-split-key b { font-weight: 800; color: var(--ink, #0f172a); font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: reduce) { .dl-split-bar i { transition: none; } }

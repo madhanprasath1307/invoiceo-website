@@ -1718,8 +1718,23 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var countEl = box.querySelector('[data-dl-count]'), tagEl = box.querySelector('[data-dl-tag]');
 
-  function show(n, live) {
+  function pct(x) { return x > 0 && x < 0.01 ? '<1%' : Math.round(x * 100) + '%'; }
+  function split(parts) {
+    var sp = box.querySelector('[data-dl-split]');
+    if (!sp || !parts) return;
+    var sum = parts.win + parts.mac + parts.lin;
+    if (!(sum > 0)) return;
+    ['win', 'mac', 'lin'].forEach(function (k) {
+      var share = parts[k] / sum;
+      var bar = sp.querySelector('[data-bar="' + k + '"]'), lab = sp.querySelector('[data-pct="' + k + '"]');
+      if (bar) { bar.style.flexGrow = String(parts[k]); bar.hidden = !(parts[k] > 0); }
+      if (lab) lab.textContent = pct(share);
+    });
+    sp.hidden = false;
+  }
+  function show(n, live, parts) {
     if (!(n > 0)) return;
+    if (live) split(parts);
     if (!live) {
       box.classList.add('is-static');
       tagEl.textContent = box.getAttribute('data-sofar-label') || tagEl.textContent;
@@ -1740,14 +1755,14 @@
   function remembered() {
     try {
       var v = JSON.parse(localStorage.getItem(KEY) || 'null');
-      if (v && v.n > 0 && Date.now() - v.t < MAX_AGE) return v.n;
+      if (v && v.n > 0 && Date.now() - v.t < MAX_AGE) return v;
     } catch (e) {}
-    return 0;
+    return null;
   }
-  function remember(n) { try { localStorage.setItem(KEY, JSON.stringify({ n: n, t: Date.now() })); } catch (e) {} }
+  function remember(n, parts) { try { localStorage.setItem(KEY, JSON.stringify({ n: n, p: parts, t: Date.now() })); } catch (e) {} }
 
   var cached = remembered();
-  if (cached) { show(cached, true); return; }
+  if (cached) { show(cached.n, true, cached.p); return; }
   if (!repo || !window.fetch) { show(fallback, false); return; }
   var ctl = window.AbortController ? new AbortController() : null;
   var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 4500);
@@ -1755,14 +1770,19 @@
     headers: { Accept: 'application/vnd.github+json' }, signal: ctl ? ctl.signal : undefined
   }).then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
     .then(function (list) {
-      var total = 0;
+      var total = 0, parts = { win: 0, mac: 0, lin: 0 };
       (list || []).forEach(function (rel) {
-        (rel.assets || []).forEach(function (a) { if (NAMES.test(a.name)) total += a.download_count || 0; });
+        (rel.assets || []).forEach(function (a) {
+          var m = NAMES.exec(a.name), c = a.download_count || 0;
+          if (!m) return;
+          total += c;
+          if (/Windows/.test(m[1])) parts.win += c; else if (/macOS/.test(m[1])) parts.mac += c; else parts.lin += c;
+        });
       });
       if (total < 1) throw new Error('no count');
       clearTimeout(timer);
-      remember(total);
-      show(total, true);
+      remember(total, parts);
+      show(total, true, parts);
     })
     .catch(function () { clearTimeout(timer); show(fallback, false); });
 })();
