@@ -30,6 +30,12 @@ window.INVOICEO = {
   // goal: the next round number. The poster says "Help us reach {goal}" and shows {downloads} so far.
   milestone: { downloads: 1100, goal: 5000, asOf: '13 November 2026' },
 
+  // The live download counter on the home page (the card under the buttons). It adds up the download
+  // counts GitHub keeps for the four installers of every release, and shows the card with a LIVE tag.
+  // If GitHub cannot be reached it shows the milestone.downloads figure above instead, without the LIVE
+  // tag. Empty repo = it always shows that figure. The answer is kept in the visitor's browser for 1 hour.
+  liveDownloads: { repo: 'Maddy-1303/invoiceo' },
+
   // Installer sizes shown on the Download page, e.g. '28 MB'. Empty = not shown.
   sizes: { windows: '18.7 MB', mac: '32.7 MB', linuxDeb: '23.6 MB', linuxAppImage: '28.4 MB' }
 };

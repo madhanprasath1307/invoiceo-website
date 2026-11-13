@@ -2190,3 +2190,21 @@ html[lang="ta"] .dlf-or span, html[lang="hi"] .dlf-or span { text-transform: non
   .dlf-badge { display: none; }
   .dlf-title { margin-top: 0; }
 }
+
+/* Live download counter (home hero) */
+@keyframes dl-pulse { 0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.55); } 70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); } 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); } }
+.dl-live { max-width: 470px; margin: 22px auto 4px; padding: 16px 18px 18px; text-align: left; background: #fff; border: 1px solid var(--line, #dbe3ee); border-radius: 18px; box-shadow: 0 12px 32px rgba(15, 29, 61, 0.08); }
+.dl-live[hidden] { display: none; }
+.dl-live-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.dl-live-tag { display: inline-flex; align-items: center; gap: 8px; }
+.dl-live-tag b { font-size: 11.5px; font-weight: 800; letter-spacing: 0.09em; color: #047857; text-transform: uppercase; }
+html[lang="ta"] .dl-live-tag b, html[lang="hi"] .dl-live-tag b { letter-spacing: 0.02em; font-size: 13px; text-transform: none; }
+.dl-dot { display: inline-block; flex: none; width: 8px; height: 8px; border-radius: 50%; background: #10b981; animation: dl-pulse 1.8s infinite; }
+.dl-live.is-static .dl-dot { display: none; }
+.dl-live.is-static .dl-live-tag b { color: var(--muted, #5b687c); }
+.dl-live-note { font-size: 12px; font-weight: 600; color: var(--muted, #5b687c); text-align: right; }
+.dl-live-num { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 9px; margin-top: 8px; }
+.dl-live-count { font-family: var(--serif, 'Fraunces', Georgia, serif); font-weight: 700; font-size: 40px; line-height: 1; color: var(--ink, #0f172a); font-variant-numeric: tabular-nums; }
+.dl-live-unit { font-weight: 700; font-size: 15px; color: var(--body, #334155); }
+@media (max-width: 480px) { .dl-live { margin-left: 0; margin-right: 0; max-width: none; } .dl-live-count { font-size: 34px; } }
+@media (prefers-reduced-motion: reduce) { .dl-dot { animation: none; } }

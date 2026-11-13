@@ -1695,3 +1695,74 @@
     window.setInterval(function () { if (visible()) { if (!timer && !hold) { var it = items[cur]; if (it && !it.classList.contains('run') && !reduce) it.classList.add('run'); loop(); } } else if (timer) { clearTimeout(timer); timer = 0; if (items[cur]) items[cur].classList.remove('run'); } }, 700);
   });
 })();
+
+/* Live download counter on the home page (the card under the buttons, data-dl-live).
+   Adds up GitHub's download counts for the four installers (Windows, macOS, Linux .deb and AppImage) of every
+   release, once per hour per browser. Shows the card with a LIVE tag. If GitHub cannot be reached it shows
+   milestone.downloads from config.js with a plain "so far" tag, and if there is no figure at all the card stays
+   hidden, so the page never states a number that was not checked. ?liveRepo=<owner/name> on localhost only,
+   for testing. */
+(function () {
+  'use strict';
+  var box = document.querySelector('[data-dl-live]');
+  if (!box) return;
+  var C = window.INVOICEO || {};
+  var repo = (C.liveDownloads && C.liveDownloads.repo) || '';
+  var fallback = parseInt((C.milestone || {}).downloads, 10) || 0;
+  if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+    var q = /[?&]liveRepo=([^&#]*)/.exec(location.search);
+    if (q) repo = decodeURIComponent(q[1]);
+  }
+  var KEY = 'invoiceo_dl_live', MAX_AGE = 3600 * 1000;
+  var NAMES = /^Invoiceo-(Setup-Windows\.exe|macOS\.dmg|Linux\.deb|Linux\.AppImage)$/;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var countEl = box.querySelector('[data-dl-count]'), tagEl = box.querySelector('[data-dl-tag]');
+
+  function show(n, live) {
+    if (!(n > 0)) return;
+    if (!live) {
+      box.classList.add('is-static');
+      tagEl.textContent = box.getAttribute('data-sofar-label') || tagEl.textContent;
+    }
+    box.hidden = false;
+    if (reduce) { countEl.textContent = n.toLocaleString('en-IN'); return; }
+    var start = null, ms = 1300, done = false;
+    function step(t) {
+      if (done) return;
+      if (start === null) start = t;
+      var k = Math.min(1, (t - start) / ms), e = 1 - Math.pow(1 - k, 3);
+      countEl.textContent = Math.round(n * e).toLocaleString('en-IN');
+      if (k < 1) window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+    setTimeout(function () { done = true; countEl.textContent = n.toLocaleString('en-IN'); }, ms + 400); // always end on the exact number
+  }
+  function remembered() {
+    try {
+      var v = JSON.parse(localStorage.getItem(KEY) || 'null');
+      if (v && v.n > 0 && Date.now() - v.t < MAX_AGE) return v.n;
+    } catch (e) {}
+    return 0;
+  }
+  function remember(n) { try { localStorage.setItem(KEY, JSON.stringify({ n: n, t: Date.now() })); } catch (e) {} }
+
+  var cached = remembered();
+  if (cached) { show(cached, true); return; }
+  if (!repo || !window.fetch) { show(fallback, false); return; }
+  var ctl = window.AbortController ? new AbortController() : null;
+  var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 4500);
+  fetch('https://api.github.com/repos/' + repo + '/releases?per_page=100', {
+    headers: { Accept: 'application/vnd.github+json' }, signal: ctl ? ctl.signal : undefined
+  }).then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+    .then(function (list) {
+      var total = 0;
+      (list || []).forEach(function (rel) {
+        (rel.assets || []).forEach(function (a) { if (NAMES.test(a.name)) total += a.download_count || 0; });
+      });
+      if (total < 1) throw new Error('no count');
+      clearTimeout(timer);
+      remember(total);
+      show(total, true);
+    })
+    .catch(function () { clearTimeout(timer); show(fallback, false); });
+})();
