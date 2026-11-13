@@ -802,7 +802,7 @@
       '<div class="mile-logo"><img src="assets/images/logo.png" alt="Invoiceo" width="196" height="68"></div>' +
       head +
       '<p class="mile-sub">Free billing software for your computer.</p>' +
-      '<ul class="mile-checks"><li>No sign-up</li><li>No invoice limit</li><li>Works offline</li></ul>' +
+      '<ul class="mile-checks"><li>No account needed</li><li>No invoice limit</li><li>Works offline</li></ul>' +
       '<div class="mile-actions"><a class="mile-cta" href="download.html">Download free</a></div>' +
       (asOf ? '<p class="mile-note">' + asOf + '</p>' : '') +
       '</div>';
@@ -1006,7 +1006,7 @@
     '<div class="doc" style="right:2.5%;top:10%;--r:4deg;animation-duration:11s;animation-delay:-2s"><b>QUOTATION Q-0008</b><i></i><i style="width:60%"></i><div class="tot"><span>€ 9,600.00</span></div></div>' +
     '<div class="doc" style="right:3.5%;top:50%;--r:-3deg;animation-duration:13s;animation-delay:-6s"><b>Tax invoice</b><span>VAT 20%</span><i></i><div class="tot"><span>£ 3,540.00</span><span class="paid">PAID</span></div></div>' +
     '<span class="chip2" style="left:5%;top:86%;animation-duration:8s"><i></i>Works offline</span>' +
-    '<span class="chip2" style="right:5%;top:85%;animation-duration:10s;animation-delay:-3s"><i class="b"></i>No sign-up</span>';
+    '<span class="chip2" style="right:5%;top:85%;animation-duration:10s;animation-delay:-3s"><i class="b"></i>No account needed</span>';
   band.insertBefore(deco, band.firstChild);
 })();
 

@@ -28,7 +28,7 @@ window.INVOICEO = {
   // installers of every version. Empty or 0 = no poster. A new number shows it
   // once more to everyone. Add ?milestone to the home page address to preview it.
   // goal: the next round number. The poster says "Help us reach {goal}" and shows {downloads} so far.
-  milestone: { downloads: 500, goal: 5000, asOf: '1 November 2026' },
+  milestone: { downloads: 1100, goal: 5000, asOf: '13 November 2026' },
 
   // Installer sizes shown on the Download page, e.g. '28 MB'. Empty = not shown.
   sizes: { windows: '18.7 MB', mac: '32.7 MB', linuxDeb: '23.6 MB', linuxAppImage: '28.4 MB' }
