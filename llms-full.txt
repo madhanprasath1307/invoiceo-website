@@ -2,7 +2,7 @@
 
 > Invoiceo is free, open-source (MIT) offline invoicing software for Windows, macOS and Linux (works in any country, with your own tax rates and currency), made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
 
-- Current version: 1.0.11, released 12 November 2026 (2026-11-12)
+- Current version: 1.0.12, released 16 November 2026 (2026-11-16)
 - Made by: Madcreations, India
 - Website: https://invoiceo.in/ (also in Tamil: https://invoiceo.in/ta.html, and Hindi: https://invoiceo.in/hi.html)
 - Price: free, with no subscription, trial or paid tier; custom features are a paid service, quoted per request
@@ -512,6 +512,12 @@ Real customers only, shown with their permission, in words they have approved (h
 ## Release notes
 
 Every release, newest first (https://invoiceo.in/changelog.html).
+
+### Version 1.0.12 (16 November 2026, 2026-11-16)
+
+- **Stay signed in.** Invoiceo no longer signs you out after 30 minutes. It now stays signed in until the app has not been used for 3 days, even if you close it and open it again, so you do not have to type your password every time. **Logout** still signs you out at once.
+- **Choose your own sign-out time.** In **Settings → Accessibility → Automatic sign-out**, pick 30 minutes, 1 hour, 2 hours, 4 hours, 8 hours, 1 day or 3 days (the default). Or choose **Custom** and type your own days, hours and minutes, from 5 minutes to 30 days. On a computer that several people use, choose a shorter time.
+- Your data and settings are unchanged: this release needs no database upgrade.
 
 ### Version 1.0.11 (12 November 2026, 2026-11-12)
 

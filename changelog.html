@@ -6,18 +6,18 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#ffffff">
   <title>What’s new: release notes and version history — Invoiceo</title>
-  <meta name="description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.11, with the release dates.">
+  <meta name="description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.12, with the release dates.">
   <link rel="canonical" href="https://invoiceo.in/changelog.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Invoiceo">
   <meta property="og:locale" content="en_IN">
   <meta property="og:title" content="What’s new: release notes and version history — Invoiceo">
-  <meta property="og:description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.11, with the release dates.">
+  <meta property="og:description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.12, with the release dates.">
   <meta property="og:url" content="https://invoiceo.in/changelog.html">
   <meta property="og:image" content="https://invoiceo.in/assets/images/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="What’s new: release notes and version history — Invoiceo">
-  <meta name="twitter:description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.11, with the release dates.">
+  <meta name="twitter:description" content="Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.12, with the release dates.">
   <meta name="twitter:image" content="https://invoiceo.in/assets/images/og-image.png">
   <link rel="alternate" type="text/markdown" href="/llms.txt" title="llms.txt">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -34,9 +34,9 @@
   "@id": "https://invoiceo.in/changelog.html#webpage",
   "url": "https://invoiceo.in/changelog.html",
   "name": "What’s new: release notes and version history — Invoiceo",
-  "description": "Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.11, with the release dates.",
+  "description": "Release notes for Invoiceo, the free billing software: what changed in each version from 1.0.0 to 1.0.12, with the release dates.",
   "inLanguage": "en",
-  "dateModified": "2026-11-12",
+  "dateModified": "2026-11-16",
   "isPartOf": {
     "@type": "WebSite",
     "@id": "https://invoiceo.in/#website",
@@ -102,8 +102,17 @@
 
 <section class="page-body">
   <div class="wrap measure">
+    <article class="release" id="v1.0.12">
+      <h2>Version 1.0.12 <span class="badge badge-brand"><span>Latest</span></span></h2>
+      <p class="date"><time datetime="2026-11-16">16 November 2026</time></p>
+      <ul>
+        <li><b>Stay signed in.</b> Invoiceo no longer signs you out after 30 minutes. It now stays signed in until the app has not been used for 3 days, even if you close it and open it again, so you do not have to type your password every time. <b>Logout</b> still signs you out at once.</li>
+        <li><b>Choose your own sign-out time.</b> In <b>Settings → Accessibility → Automatic sign-out</b>, pick 30 minutes, 1 hour, 2 hours, 4 hours, 8 hours, 1 day or 3 days (the default). Or choose <b>Custom</b> and type your own days, hours and minutes, from 5 minutes to 30 days. On a computer that several people use, choose a shorter time.</li>
+        <li>Your data and settings are unchanged: this release needs no database upgrade.</li>
+      </ul>
+    </article>
     <article class="release" id="v1.0.11">
-      <h2>Version 1.0.11 <span class="badge badge-brand"><span>Latest</span></span></h2>
+      <h2>Version 1.0.11</h2>
       <p class="date"><time datetime="2026-11-12">12 November 2026</time></p>
       <ul>
         <li><b>Bills now say “Invoice No.” instead of “#”.</b> On the Classic, Modern and Executive invoice designs, the number now reads “Invoice No: INV-00000012” instead of “#: INV-00000012”. Quotations say Quotation No, receipts Receipt No, and bills with a GST title such as Credit Note, Debit Note or Bill of Supply use that name. The Minimal design gets an “INVOICE NO” heading above the number.</li>
