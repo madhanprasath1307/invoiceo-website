@@ -1,7 +1,7 @@
 /* The one place for site settings. Leave a value empty ('') and the button or
    block that needs it is hidden (or shows "coming soon") — nothing breaks. */
 window.INVOICEO = {
-  version: '1.0.13',
+  version: '1.0.14',
   releaseDate: '17 November 2026',
 
   // WhatsApp number with country code, digits only, e.g. '919876543210'.
@@ -28,7 +28,7 @@ window.INVOICEO = {
   // installers of every version. Empty or 0 = no poster. A new number shows it
   // once more to everyone. Add ?milestone to the home page address to preview it.
   // goal: the next round number. The poster says "Help us reach {goal}" and shows {downloads} so far.
-  milestone: { downloads: 1100, goal: 5000, asOf: '13 November 2026' },
+  milestone: { downloads: 1200, goal: 5000, asOf: '17 November 2026' },
 
   // The live download counter on the home page (the card under the buttons). It adds up the download
   // counts GitHub keeps for the four installers of every release, and shows the card with a LIVE tag.

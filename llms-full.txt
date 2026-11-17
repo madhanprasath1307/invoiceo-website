@@ -2,7 +2,7 @@
 
 > Invoiceo is free, open-source (MIT) offline invoicing software for Windows, macOS and Linux (works in any country, with your own tax rates and currency), made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
 
-- Current version: 1.0.13, released 17 November 2026 (2026-11-17)
+- Current version: 1.0.14, released 17 November 2026 (2026-11-17)
 - Made by: Madcreations, India
 - Website: https://invoiceo.in/ (also in Tamil: https://invoiceo.in/ta.html, and Hindi: https://invoiceo.in/hi.html)
 - Price: free, with no subscription, trial or paid tier; custom features are a paid service, quoted per request
@@ -512,6 +512,15 @@ Real customers only, shown with their permission, in words they have approved (h
 ## Release notes
 
 Every release, newest first (https://invoiceo.in/changelog.html).
+
+### Version 1.0.14 (17 November 2026, 2026-11-17)
+
+- **Save a draft in the Standard layout too.** The New Invoice page now has a **Draft** button, and when you leave a half-made invoice the question offers **Save Draft** next to Keep Editing, Discard and Save. Your drafts are listed above the Invoices, Quotations and Receipts lists, and **Continue** opens one again. Drafts are shared with the Modern layout.
+- **A draft remembers the Payment choice.** If you chose Partial or Paid (with the amount, the method and the reference), it comes back when you continue the draft. Nothing is recorded until you create the invoice.
+- **Contact Support on every page.** In the Modern layout a blue support icon sits in the top bar of every page. Hover to see its name, click to open the support request form directly.
+- **The Created page shows what was paid** in the Standard layout as well: “PAID IN FULL · Cash”, or the amount received and the balance due.
+- **Easier New Invoice page.** Advanced Options start open in the Modern layout. In the Standard layout the right-hand panel now scrolls as one piece, so the Payment section is easy to reach on a small window, and “Draft saved” no longer covers the buttons.
+- Your data and settings are unchanged: this release needs no database upgrade.
 
 ### Version 1.0.13 (17 November 2026, 2026-11-17)
 
