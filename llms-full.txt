@@ -2,7 +2,7 @@
 
 > Invoiceo is free, open-source (MIT) offline invoicing software for Windows, macOS and Linux (works in any country, with your own tax rates and currency), made by Madcreations (India). This file collects the main text of https://invoiceo.in/ in one place, for AI assistants and other readers.
 
-- Current version: 1.0.12, released 16 November 2026 (2026-11-16)
+- Current version: 1.0.13, released 17 November 2026 (2026-11-17)
 - Made by: Madcreations, India
 - Website: https://invoiceo.in/ (also in Tamil: https://invoiceo.in/ta.html, and Hindi: https://invoiceo.in/hi.html)
 - Price: free, with no subscription, trial or paid tier; custom features are a paid service, quoted per request
@@ -512,6 +512,11 @@ Real customers only, shown with their permission, in words they have approved (h
 ## Release notes
 
 Every release, newest first (https://invoiceo.in/changelog.html).
+
+### Version 1.0.13 (17 November 2026, 2026-11-17)
+
+- **Record the payment while you make the invoice.** The New Invoice page has a new **Payment** section with **Unpaid**, **Partial** and **Paid**. Unpaid works as before and records nothing. **Paid** asks for the payment method (Cash, Bank Transfer, Cheque, Online or Other, the same list as Apply Payment) and records the full amount. **Partial** asks for the amount received and the method, and shows the balance due as you type. The payment is saved with the invoice: the Created page says what was paid, and the printed bill shows “Paid in full” or the balance due.
+- Your data and settings are unchanged: this release needs no database upgrade.
 
 ### Version 1.0.12 (16 November 2026, 2026-11-16)
 
