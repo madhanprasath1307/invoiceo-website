@@ -28,7 +28,7 @@ window.INVOICEO = {
   // installers of every version. Empty or 0 = no poster. A new number shows it
   // once more to everyone. Add ?milestone to the home page address to preview it.
   // goal: the next round number. The poster says "Help us reach {goal}" and shows {downloads} so far.
-  milestone: { downloads: 1200, goal: 5000, asOf: '17 November 2026' },
+  milestone: { downloads: 1400, goal: 5000, asOf: '23 November 2026' },
 
   // The live download counter on the home page (the card under the buttons). It adds up the download
   // counts GitHub keeps for the four installers of every release, and shows the card with a LIVE tag.
