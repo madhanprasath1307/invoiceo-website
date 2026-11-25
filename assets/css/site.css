@@ -1345,6 +1345,8 @@ html[lang="ta"] .foot-mark, html[lang="hi"] .foot-mark { font-family: "Fraunces"
 .review-story > .stack:first-child h2 { font-family: var(--serif); font-weight: var(--serif-w); font-size: clamp(28px, 3vw, 40px); line-height: 1.15; color: #14234a; }
 .review-story > .doc-full { grid-column: 2; grid-row: 1 / span 4; position: sticky; top: 110px; padding: 28px; border-radius: 26px; background: linear-gradient(160deg, #eaf1ff, #f6f9ff); border: 1px solid var(--line); box-shadow: 0 28px 70px rgba(40, 90, 190, 0.14); }
 .review-story > .doc-full img { box-shadow: 0 18px 44px rgba(15, 23, 42, 0.18); border-radius: 12px; }
+/* A story that is a single column (the Sigma bill, the own-brand app): the picture is not sticky, or the card below slides over it as you scroll. */
+#tax-invoice-layout .review-story > .doc-full, #own-brand .review-story > .doc-full { position: static; }
 .review-story > .doc-full.doc-narrow { max-width: none; margin: 0; }
 .review-story > .doc-full.doc-narrow img { max-width: 360px; margin: 0 auto; }
 #sales-purchase .review-story > .stack:first-child { grid-column: 2; }
